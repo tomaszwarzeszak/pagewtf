@@ -1,0 +1,36 @@
+body{
+    background-color: #67eb9a;
+}
+
+.header{
+    font-size: 22px;
+    color: rgb(9, 54, 0) ;
+}
+
+.navigation a{
+    padding: 10px;
+    font-size: 18px;
+    color:  black;
+    background-color:#9af0bb;
+    text-decoration: none;
+}
+
+.about-me h2{
+    color: #1460AA;
+    font-size: 25px;
+}
+
+.about-me p{
+    color: rgb(6, 53, 100);
+    font-size: 14px;
+}
+
+.notes h2{
+    font-size: 25px;
+    color: rgb(14, 72, 131);
+}
+
+.notesArticle a{
+    text-decoration: none;
+    color: rgb(187, 59, 0);
+}
