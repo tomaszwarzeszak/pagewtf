@@ -1,36 +1,45 @@
-body{
-    background-color: #67eb9a;
+body {
+  background-color: #bdbdbd;
 }
 
-.header{
-    font-size: 22px;
-    color: rgb(9, 54, 0) ;
+p{
+  color: #313645;
 }
 
-.navigation a{
-    padding: 10px;
-    font-size: 18px;
-    color:  black;
-    background-color:#74a3e9;
-    text-decoration: none;
+.header {
+  font-size: 22px;
+  color: #0D0E25;
 }
 
-.about-me h2{
-    color: #1460AA;
-    font-size: 25px;
+.navigation a {
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  background-color: #E6E6E6;
+  text-decoration: none;
 }
 
-.about-me p{
-    color: rgb(6, 53, 100);
-    font-size: 14px;
+.about-me h2 {
+  color: #E3170A;
+  font-size: 25px;
 }
 
-.notes h2{
-    font-size: 25px;
-    color: rgb(14, 72, 131);
+.about-me p {
+
+  font-size: 14px;
 }
 
-.notesArticle a{
-    text-decoration: none;
-    color: rgb(187, 59, 0);
+.notes h2 {
+  font-size: 25px;
+  color: #E3170A;;
+}
+
+.notesArticle a {
+  text-decoration: none;
+  color: rgb(187, 59, 0);
+}
+
+footer{
+  color: white;
+  background-color: #2B2D42;
 }
