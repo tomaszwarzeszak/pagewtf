@@ -1,35 +1,94 @@
 body {
+  margin: 0;
   background-color: #bdbdbd;
 }
 
+.main{
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Calibri', sans-serif;
+}
+
 p{
+  font-size: 18px;
   color: #313645;
 }
 
-.header {
-  font-size: 22px;
-  color: #0D0E25;
+/* Nawigacja*/
+
+.navigation{
+  background-color: #E6E6E6;
+  width: 100%;
+  text-align: center;
+  height: 60px;
 }
 
 .navigation a {
-  padding: 10px;
-  font-size: 18px;
+  display: inline-block;
+  width: 180px;
+  font-family: 'Calibri',  sans-serif;
+  padding: 14px 0;
+  font-size: 25px;
   color: black;
-  background-color: #E6E6E6;
   text-decoration: none;
+  border-radius: 25px;
+}
+.navigation a:hover{
+  background-color: rgb(214, 214, 214);
+ 
+}
+
+
+/*nagłówek*/
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: #0D0E25;
+  text-align: center;
+}
+
+/*o autorze*/
+.author{
+  margin-top: 60px;
+  position: relative;
+}
+
+.about-me{
+
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .about-me h2 {
+  text-align: center;
   color: #E3170A;
   font-size: 25px;
 }
 
 .about-me p {
-
-  font-size: 14px;
+  font-size: 19px;
 }
 
+.image{
+  text-align: center;
+  width: 50%;
+
+}
+
+.fotoImage{
+  width: 300px;
+  border-radius: 30% 60% 70% 30%/30% 30% 70% 70%;
+}
+
+/*notatki*/
+
 .notes h2 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
   font-size: 25px;
   color: #E3170A;;
 }
@@ -39,7 +98,14 @@ p{
   color: rgb(187, 59, 0);
 }
 
-footer{
-  color: white;
+/*stopka*/
+.footer{
+  font-family: 'Verdana', sans-serif;
   background-color: #2B2D42;
+  height: 100px;
+  text-align: center;
+}
+.footer p{
+  padding: 40px 0;
+  color: #ffffff;
 }
