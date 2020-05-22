@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tydzień 1</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <nav class="navigation">
-      <a href="index.html">Strona Główna</a>
-      <a href="Tydzien1.html">Tydzień 1</a>
-      <a href="Tydzien2.html">Tydzień 2</a>
-      <a href="Tydzien3.html">Tydzień 3</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tydzień 1</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <main class="main">
-      <section>
-        <h1>Tydzień 1:</h1>
+<body>
+  <nav class="navigation">
+    <a href="index.html">Strona Główna</a>
+    <a href="Tydzien1.html">Tydzień 1</a>
+    <a href="Tydzien2.html">Tydzień 2</a>
+    <a href="Tydzien3.html">Tydzień 3</a>
+  </nav>
 
-        <img src="tydzien1.jpg" alt="tydzień 1" />
+  <main class="main">
+    <section class="subpage">
 
-        <h2>2.02 Warstwy Strony Internetowej</h2>
+      <header class="header">
+        <h1>Tydzień 1</h1>
+      </header>
+
+      <div class="subpageImage">
+          <img class="fotoSubpageImage" src="image/tydzien1.jpg" alt="tydzień 1" />
+      </div>
+
+
+      <article class="subpageArticle">
+         <h2>2.02 Warstwy Strony Internetowej</h2>
         <p>
-          Każda strona internetowa posiada 4 wartswy:<br />
+          Każda strona internetowa posiada 4 wartswy:<br/>
           1. Treść strony<br />
           2. HTML<br />
           3. CSS<br />
@@ -33,7 +41,10 @@
           • !!! Jeżeli możemy coś zrobić za pomocą danego języka robimy to za
           pomocą tego języka
         </p>
+      </article>
 
+
+      <article class="subpageArticle">
         <h2>2.03 WTF: HTML</h2>
         <p>
           Język HTML jest językiem znaczników odpowiadający za treść strony.<br />
@@ -60,7 +71,10 @@
           • !!! Po napisaniu kodu strony warto sprawdzić go za pomocą validatora
           W3C
         </p>
+      </article>
 
+
+      <article class="subpageArticle">
         <h2>2.04 WTF: CSS</h2>
 
         <p>
@@ -78,14 +92,21 @@
           <br />
           &lt;link href=„style.css” rel=”stylesheet” type=”text/css”&gt;<br />
         </p>
-        <h2>2.05 Magia Programowania</h2>
-        <p>
-          W tej lekcji dowiedzietej lekcji dowiedzieliśmy się czym jest
-          programowanie w życiu codziennym.
-          <br /><br />
-          Język Java Script odpowiada za interakcje na stronie internetowej.
-        </p>
+      </article>
 
+
+        <article class="subpageArticle">
+          <h2>2.05 Magia Programowania</h2>
+          <p>
+            W tej lekcji dowiedzietej lekcji dowiedzieliśmy się czym jest
+            programowanie w życiu codziennym.
+            <br /><br />
+            Język Java Script odpowiada za interakcje na stronie internetowej.
+          </p>
+      </article>
+
+
+      <article class="subpageArticle">
         <h2>2.06 DevTools</h2>
         <p>
           DevTools to inaczej narzędzia Developerskie. Wchodzimy w nie poprzez
@@ -94,14 +115,19 @@
           Opcja badania strony internetowej pomaga w podglądaniu, który fragment
           kodu odpowiada za konkretną część bądź interakcję na stronie.
         </p>
-      </section>
-    </main>
-    <footer class="footer">
-      <p>
-        <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
-          szkolenia WTF: co ten frontend ?</b
-        >
-      </p>
-    </footer>
-  </body>
+      </article>
+
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <p>
+      <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
+        szkolenia WTF: co ten frontend ?</b>
+    </p>
+  </footer>
+
+</body>
+
 </html>

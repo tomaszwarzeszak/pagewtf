@@ -1,106 +1,198 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tydzień 2</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <nav class="navigation">
-      <a href="index.html">Strona Główna</a>
-      <a href="Tydzien1.html">Tydzień 1</a>
-      <a href="Tydzien2.html">Tydzień 2</a>
-      <a href="Tydzien3.html">Tydzień 3</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tydzień 2</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <main class="main">
-      <section>
-        <h1>Tydzień 2:</h1>
-        <img src="tydzien2.jpg" alt="tydzień 2" />
+<body>
+  <nav class="navigation">
+    <a href="index.html">Strona Główna</a>
+    <a href="Tydzien1.html">Tydzień 1</a>
+    <a href="Tydzien2.html">Tydzień 2</a>
+    <a href="Tydzien3.html">Tydzień 3</a>
+  </nav>
 
-        <h2>2.02 Warstwy Strony Internetowej</h2>
-        <p>
-          Każda strona internetowa posiada 4 wartswy:<br />
-          1. Treść strony<br />
-          2. HTML<br />
-          3. CSS<br />
-          4. Java Script.<br />
+  <main class="main">
 
-          <br />
-          • !!! Jeżeli możemy coś zrobić za pomocą danego języka robimy to za
-          pomocą tego języka
-        </p>
+    <section class="subpage">
 
-        <h3>2.03 WTF: HTML</h3>
-        <p>
-          Język HTML jest językiem znaczników odpowiadający za treść strony.<br />
-          <br />
-          Budowa znacznika:<br />
-          &lt;znacznik atrybut=”wartość”&gt;treść&lt;/znacznik&gt;<br />
-          <br />
-          Podstawowe znaczniki semantyczne:<br />
-          -&lt;main&gt;&lt;/main&gt; - oznacza główną część dokumentu. (może
-          wystąpić tylko jeden na stronie.)<br />
-          -&lt;section&gt;&lt;/section&gt; - sekcja dokumentu, która dzieli
-          stronę na poszczególne sekcjetematyczne.<br />
-          -&lt;article&gt;&lt;/article&gt; - służy do oznaczania samodzielnych
-          grup treści na stronie. (nie jest zależna od sekcji.)<br />
-          -&lt;header&gt;&lt;/header&gt; - Opisuje nazwę dokumentu, sekcji lub
-          artykułu na stronie. (może występować tylko jeden na daną sekcję)<br />
-          -&lt;footer&gt;&lt;/footer&gt; - Opisuje stopkę dokumentu lub
-          sekcji.<br />
-          -&lt;h1-h6&gt; - Tekstowe nagłówki tytułowe – dokumentu/ sekcji
-          numerujemy je po kolei w zależności od ważności danego nagłówka.
-          (znacznik H1 powinien występować tylko raz na stronie)<br />
-          -&lt;p&gt; - odpowiada za paragraf i akapit.<br />
-          <br />
-          • !!! Po napisaniu kodu strony warto sprawdzić go za pomocą validatora
-          W3C
-        </p>
+      <header class="header">
+        <h1>Tydzień 2</h1>
+      </header>
 
-        <h3>2.04 WTF: CSS</h3>
+      <div class="subpageImage">
+        <img class="fotoSubpageImage" src="/homepage/image/tydzien2.jpg" alt="tydzień 2" />
+      </div>
 
-        <p>
-          Język CSS odpowiada za wygląd i prezentację strony.<br />
-          <br />
-          Budowa reguły CSS:<br />
-          <br />
-          selektor{<br />
-          właściwość: wartość;<br />
-          };
-          <br />
-          <br />
-          Plik ze stylami definiujemy w pliku HTML w części
-          &lt;head&gt;&lt;/head&gt; za pomocą znacznika:<br />
-          <br />
-          &lt;link href=„style.css” rel=”stylesheet” type=”text/css”&gt;<br />
-        </p>
-        <h3>2.05 Magia Programowania</h3>
-        <p>
-          W tej lekcji dowiedzietej lekcji dowiedzieliśmy się czym jest
-          programowanie w życiu codziennym.
-          <br /><br />
-          Język Java Script odpowiada za interakcje na stronie internetowej.
-        </p>
-
-        <h3>2.06 DevTools</h3>
-        <p>
-          DevTools to inaczej narzędzia Developerskie. Wchodzimy w nie poprzez
-          opcję zbadania konkretnego fragmentu strony.<br />
-          <br />
-          Opcja badania strony internetowej pomaga w podglądaniu, który fragment
-          kodu odpowiada za konkretną część bądź interakcję na stronie.
-        </p>
-      </section>
-    </main>
-    <footer class="footer">
+      <article class="subpageArticle">
+      <h2>3.02 Kanban</h2>
       <p>
-        <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
-          szkolenia WTF: co ten frontend ?</b
-        >
-      </p>
-    </footer>
-  </body>
+        Kanban -  „spis widoczny” – sposób planowania swojej pracy przydatne zarówno w projekcie<br/>
+        jak i w wielu innych czynnościach życia codziennego.<br/> 
+        Plan pracy zazwyczaj zapisywany jest na tablicy lub w specjalnie przygotowanych do tego<br/>
+         aplikacjach takich jak np. „Trello”.<br/><br/>
+        
+         Tablicę dzielimy na min. 3 kolumny:<br/> 
+        -  Pierwsza „Todo” - zapisujemy poszczególne kroki lub zadania do wykonania<br/>
+         np. części projektu<br/>
+        -  Druga „Doing” - zamieszczamy rzeczy, które wykonywane są w danym momencie<br/>
+         (ważne aby w tej kolumnie była jak najmniejsza ilość zadań do wykonania w danym momencie najlepiej jedna)<br/>
+        - Trzecia  „Done” –w tej kolumnie zamieszczamy rzeczy, które zostały już zrealizowane. 
+        </p>
+      </article>
+
+      <article class="subpageArticle">
+
+       <h2>3.02 WTF: HTML II</h2> 
+       <p>
+          Nowe znaczniki:<br/>
+          - &lt;br/&gt; - łamanie linii, przenosi kursor do nowej linii.<br/>
+          - &lt;b&gt; - znacznik do pogrubienia tekstu, który nie ma znaczenia semantycznego służy do wyróżnienia tekstu z otaczającego.<br/>
+          - &lt;i&gt; - znacznik do stworzenia pochylonego tekstu, który nie ma znaczenia semantycznego służy do wyróżnienia tekstu z otaczającego.<br/>
+          - &lt;strong&gt; - znacznik do pogrubienia tekstu , który ma znaczenie semantyczne, podkreśla wysoką istotność i poważność frazy w nim zawartej.<br/>
+          - &lt;Em&gt; znacznik do stworzenia kursywy w  tekście, mający znaczenie semantyczne podkreśla, że tekst może mieć inne znaczenie (np.ironia).<br/>
+          - &lt;a href=”” target=””>opis łącza&lt;/a&gt; - linki/ łącza wewnątrz dokumentu.<br/>
+          - &lt;element id=”mój-identyfikator”&gt; - atrybut id – identyfikuje element (przydaje się do nawigacji w obrębie dokumentu).<br/>
+          Aby odwołać się do id w obrębie dokumentu należy zapisać &lt;a href=”#moj-identyfikator”&gt;opis łącza&lt;/a&gt;<br/>
+          - &lt;nav&gt; - znacznik w, którym zawieramy nawigację strony.<br/>
+          - &lt;img src=”” alt=””&gt; - dodawanie obrazku na stronę. <br/>
+        </p>
+      </article>
+
+      <article class="subpageArticle">
+        <h2>3.03 Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h2> 
+        <p>
+          <i>„Najtrudniejszą rzeczą w programowaniu nie jest wymyślanie algorytmów, testowanie aplikacji czy pisanie kodu, lecz wymyślanie nazw dla rzeczy” M.Korsan </i><br/><br/>
+
+          Reguły dotyczące nazywania rzeczy:<br/>
+          - nazwy zapisujemy bez polskich znaków,<br/>
+          - nie używamy spacji,<br/>
+          -najlepiej używać angielskich słów<br/>
+          -trzymamy się jednego schematu<br/><br/>
+
+          Konwencje nazewnictwa:<br/>
+          - camelCase – nazwa pochodzi od budowy wielbłąda zapisujemy pierwsze słowo małą literą a każde kolejne rozpoczynamy z dużej.<br/>
+          - kebab-case – nazwa wzięta z szaszłyka zapisujemy każde słowo z małej litery rodzielając je znakiem „-”.<br/>
+          - snake_case – nazwa wzięta z węża snake zapisujemy go z małej litery oddzielając każde słowo znakiem „_”.<br/>
+          -PascalCase – nazwa wzięta z języka Pascal zapisujemy każde słowo z dużej litery.<br/>
+        </p>
+      </article>
+
+      <article class="subpageArticle">
+        <h2>3.04 WTF: CSS II</h2> 
+        <p>
+          Jednym z sposobów załączania stylów css jest załączenie do znacznika jako atrybut zwany „inline”. Polega on na wpisywaniu własności wewnątrz znacznika.<br/>
+          Nie jest to zalecany sposób dylowania strony.<br/>
+
+          Kolejnym ze sposobów załączania stylów jest stylowanie poprzez tzw. „Prawdziwe selektory”.<br/>
+          Jednym z najbardziej zalecanych i popularnych sposobów jest stylowanie poprzez dodawanie atrybutu „class” lub „Id” do wybranego znacznika w arkuszu HTML.<br/><br/>
+
+          W arkuszu stylów klasę zapisujemy :<br/>
+          .nazwa-klasy{<br/>
+            właściwiość: wartość;<br/>
+          }<br/><br/>
+
+          <b>Można używać tej samej klasy w kilku znacznikach.</b><br/><br/>
+
+          W arkuszu stylów id zapisujemy:<br/>
+          #name{<br/>
+            właściwość: wartość;<br/>
+          {<br/><br/>
+
+          <b>Id używamy tylko jeden raz w arkuszu HTML.</b><br/><br/>
+
+          Selektoty możemy z sobą łączyć zapisując je po spacji, nazywamy to „specyficznością CSS”.<br/><br/>
+
+          Własności CSS na stronie wczytywane są wg. specyficzności:<br/>
+          -!important – jest to własność zapisywana bezpośrednio przy własności w arkuszu CSS.<br/>
+          - style=”” – własność  zapisywana wewnątrz znacznika HTML.<br/>
+          - #name – id zapisywane w znaczniku HTML a stylowane w arkuszu CSS.<br/>
+          -.name  - klasa zapisywana jest w znaczniku HTLML a stylowana w arkuszu CSS.<br/>
+          - element – zapisywany jest w sekcji body w arkuszu HTML.<br/><br/>
+
+          <b>Jeżeli specyficzność jest równa wygrywa selektor bliżej elementu.</b><br/><br/>
+
+          Najbardziej zalecaną formą jest dodawanie klasy do wszystkich elementów i unikanie zagnieżdżeń.<br/>
+        </p>
+      
+      </article>
+
+      <article class="subpageArticle">
+        <h2>3.05 Jak działa Internet i przeglądarka</h2> 
+        <p>
+          <b>http</b> – jest to protokół, którego używają przeglądarki do wczytywania stron z serwera.<br/>
+          <b>https</b> – jest to protokół za pomocą, którego przeglądarki wczytują pliki z serwera ten rodzaj protokołu jest szyfrowany i obecnie najbardziej zalecany do używania.<br/><br/>
+
+          URL – Uniform Resource Locator – Jest to adres, który wpisujemy w przeglądarce aby wczytać pliki z serwera.<br/><br/>
+
+          <b>Proces wczytywania strony:</b><br/>
+          - wpisuję w pasku adresu np. cotenfrontend.pl<br/>
+          - przeglądarka szuka serwera cotenfrontend.pl [DNS]<br/>
+          - po znalezieniu serwera odpytuje go o index<br/>
+          - serwer wysyła do przeglądarki zawartość html<br/>
+          - przeglądarka wczytuje html i szuka wszystkich dodatkowych zasobów: style, skrypty, obrazki itp. i dla każdego z zasobów wykonuje zapytanie.<br/>
+          - Przeglądarka parsuje i renderuje stronę.<br/><br/>
+
+         <b> W narzędziach developerskich w przeglądarce w zakładce Network pokazany jest ruch sieciowy podczas wczytywania strony.</b><br/><br/>
+
+          <b>Kody odpowiedzi http:</b><br/>
+          - 200 – jest ok wszystko działa.<br/>
+          -30x – Szukasz w złym miejscu przekieruję Cię w dobre miejsce bo wiem gdzie.<br/>
+          -404 – Błąd – nie znaleziono tego czego szukasz.<br/>
+          - 50x – Błąd wewnętrzny serwera.<br/><br/>
+
+          <b>Root „/” – ten slash mówi w, którym miejscu przeglądarka powinna szukać zasobów.</b><br/>
+        </p>
+      </article>
+
+      <article class="subpageArticle">
+        <h2>3.06 WTF: JavaScript</h2>
+        <p>
+          JS = JavaScript – Jest to język skryptowy programowania webowego. Na stronie internetowej odpowiada za interakcje i może wpływać na arkusz CSS, HTML oraz content strony.<br/><br/>
+
+          Język JS składa się z:<br/>
+          - Wartości – dla języka JS jest jak liczby w matematyce<br/>
+          - Operacji porównywania - <br/>
+          - Literały – specjalny ciąg znaków dzięki, któremu możemy wypisać w konsoli tekst razem ze zmiennymi.<br/>
+          - Zmienne – połączenie między nazwą, którą wprowadzamy a wartością.<br/>
+          -Obiekty<br/>
+          -Funkcje<br/><br/>
+          
+          Kod JS podpinamy do strony za pomocą znacznika &lt;script&gt; w arkuszu HTML lub tworzymy oddzielny plik skryptowy z rozszerzeniem .js<br/><br/>
+          
+          Polecenia języka JS:<br/>
+          -console.log(‘Siema!’); - to polecenie wyświetla nam wartości w narzędziach developerskich w karcie Console.<br/>
+        </p>
+      </article>
+
+      <article class="subpageArticle">
+        <h2>3.07 Terminal</h2> 
+          <p>
+            Terminal w systemie Windows odpalamy jako „Wiersz Poleceń”<br/><br/>
+
+            Komendy w terminalu w systemie Windows:<br/>
+            - cd C:\ - przejście do głównego katalogu na dysku C<br/>
+            - dir – wypisanie zawartości katalogu<br/>
+            - cd .. – przejście do katalogu wyżej<br/>
+            - cd „nazwa-katalogu” – przejście do katalogu o nazwie „nazwa-katalogu”<br/>
+            - code . – uruchomienie Visual studio code w aktualnym katalogu<br/>
+            - cd – wyświetlenie aktualnej ścieżki<br/>
+            - mkdir „nazwa katalogu” – stworzenie katalogu o nazwie nazwa-katalogu<br/>   
+
+          </p>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>
+      <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
+        szkolenia WTF: co ten frontend ?</b>
+    </p>
+  </footer>
+</body>
+
 </html>

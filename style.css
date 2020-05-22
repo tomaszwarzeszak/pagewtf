@@ -52,6 +52,7 @@ p{
 .author{
   margin-top: 60px;
   position: relative;
+  height: 300px;
 }
 
 .about-me{
@@ -90,13 +91,42 @@ p{
   margin-bottom: 40px;
   text-align: center;
   font-size: 25px;
-  color: #E3170A;;
+  color: #E3170A;
 }
 
 .notesArticle a {
   text-decoration: none;
   color: rgb(187, 59, 0);
 }
+
+/*Podstrony*/
+
+.subpageArticle{
+  margin-top: 60px;
+}
+
+.subpageArticle h2{
+  font-size: 25px;
+  color: #E3170A;
+}
+
+/* Podstrona Tydzień 1 */
+
+.subpageImage{
+  position: relative;
+}
+
+.fotoSubpageImage{
+  position: absolute;
+  width: 300px;
+  border-radius: 20px;
+  right: 0;
+  top:50px;
+
+}
+
+
+
 
 /*stopka*/
 .footer{
