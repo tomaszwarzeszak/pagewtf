@@ -4,3 +4,9 @@ const lastName = "Warzeszak";
 
 console.log(`Cześć moje imię to ${firstName} nazwisko ${lastName} mam ${age} lat. 
 Witam Cię na mojej stonie internetowej mam nadzieję, że będzie Ci tutaj dobrze. `);
+
+const header = document.querySelector('.additives-js');
+
+header.innerHTML = "<h2>Dodatki</h2>";
+
+console.log(header);
