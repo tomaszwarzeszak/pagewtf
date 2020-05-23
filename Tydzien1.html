@@ -10,27 +10,27 @@
 
 <body>
   <nav class="navigation">
-    <a href="index.html">Strona Główna</a>
-    <a href="Tydzien1.html">Tydzień 1</a>
-    <a href="Tydzien2.html">Tydzień 2</a>
-    <a href="Tydzien3.html">Tydzień 3</a>
+    <a class="navigation__link" href="index.html">Strona Główna</a>
+    <a class="navigation__link" href="Tydzien1.html">Tydzień 1</a>
+    <a class="navigation__link" href="Tydzien2.html">Tydzień 2</a>
+    <a class="navigation__link" href="Tydzien3.html">Tydzień 3</a>
   </nav>
 
   <main class="main">
     <section class="subpage">
 
       <header class="header">
-        <h1>Tydzień 1</h1>
+        <h1 class="header__title">Tydzień 1</h1>
       </header>
 
-      <div class="subpageImage">
-          <img class="fotoSubpageImage" src="image/tydzien1.jpg" alt="tydzień 1" />
+      <div class="subpage__image">
+          <img class="subpage__image--foto" src="image/tydzien1.jpg" alt="tydzień 1" />
       </div>
 
 
-      <article class="subpageArticle">
-         <h2>2.02 Warstwy Strony Internetowej</h2>
-        <p>
+      <article class="subpage__article">
+         <h2 class="subpage__article--header">2.02 Warstwy Strony Internetowej</h2>
+        <p class="subpage__article--content">
           Każda strona internetowa posiada 4 wartswy:<br/>
           1. Treść strony<br />
           2. HTML<br />
@@ -44,9 +44,9 @@
       </article>
 
 
-      <article class="subpageArticle">
-        <h2>2.03 WTF: HTML</h2>
-        <p>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">2.03 WTF: HTML</h2>
+        <p class="subpage__article--content">
           Język HTML jest językiem znaczników odpowiadający za treść strony.<br />
           <br />
           Budowa znacznika:<br />
@@ -74,10 +74,10 @@
       </article>
 
 
-      <article class="subpageArticle">
-        <h2>2.04 WTF: CSS</h2>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">2.04 WTF: CSS</h2>
 
-        <p>
+        <p class="subpage__article--content">
           Język CSS odpowiada za wygląd i prezentację strony.<br />
           <br />
           Budowa reguły CSS:<br />
@@ -95,9 +95,9 @@
       </article>
 
 
-        <article class="subpageArticle">
-          <h2>2.05 Magia Programowania</h2>
-          <p>
+        <article class="subpage__article">
+          <h2 class="subpage__article--header">2.05 Magia Programowania</h2>
+          <p class="subpage__article--content">
             W tej lekcji dowiedzietej lekcji dowiedzieliśmy się czym jest
             programowanie w życiu codziennym.
             <br /><br />
@@ -106,9 +106,9 @@
       </article>
 
 
-      <article class="subpageArticle">
-        <h2>2.06 DevTools</h2>
-        <p>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">2.06 DevTools</h2>
+        <p class="subpage__article--content">
           DevTools to inaczej narzędzia Developerskie. Wchodzimy w nie poprzez
           opcję zbadania konkretnego fragmentu strony.<br />
           <br />
@@ -122,7 +122,7 @@
 
 
   <footer class="footer">
-    <p>
+    <p class="footer__content">
       <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
         szkolenia WTF: co ten frontend ?</b>
     </p>

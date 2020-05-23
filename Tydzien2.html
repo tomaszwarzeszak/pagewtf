@@ -10,10 +10,10 @@
 
 <body>
   <nav class="navigation">
-    <a href="index.html">Strona Główna</a>
-    <a href="Tydzien1.html">Tydzień 1</a>
-    <a href="Tydzien2.html">Tydzień 2</a>
-    <a href="Tydzien3.html">Tydzień 3</a>
+    <a class="navigation__link" href="index.html">Strona Główna</a>
+    <a class="navigation__link" href="Tydzien1.html">Tydzień 1</a>
+    <a class="navigation__link" href="Tydzien2.html">Tydzień 2</a>
+    <a class="navigation__link" href="Tydzien3.html">Tydzień 3</a>
   </nav>
 
   <main class="main">
@@ -21,16 +21,16 @@
     <section class="subpage">
 
       <header class="header">
-        <h1>Tydzień 2</h1>
+        <h1 class="header__title">Tydzień 2</h1>
       </header>
 
-      <div class="subpageImage">
-        <img class="fotoSubpageImage" src="/homepage/image/tydzien2.jpg" alt="tydzień 2" />
+      <div class="subpage__image">
+        <img class="subpage__image--foto" src="/homepage/image/tydzien2.jpg" alt="tydzień 2" />
       </div>
 
-      <article class="subpageArticle">
-      <h2>3.02 Kanban</h2>
-      <p>
+      <article class="subpage__article">
+      <h2 class="subpage__article--header">3.02 Kanban</h2>
+      <p class="subpage__article--content">
         Kanban -  „spis widoczny” – sposób planowania swojej pracy przydatne zarówno w projekcie<br/>
         jak i w wielu innych czynnościach życia codziennego.<br/> 
         Plan pracy zazwyczaj zapisywany jest na tablicy lub w specjalnie przygotowanych do tego<br/>
@@ -45,10 +45,10 @@
         </p>
       </article>
 
-      <article class="subpageArticle">
+      <article class="subpage__article">
 
-       <h2>3.02 WTF: HTML II</h2> 
-       <p>
+       <h2 class="subpage__article--header">3.02 WTF: HTML II</h2> 
+       <p class="subpage__article--content">
           Nowe znaczniki:<br/>
           - &lt;br/&gt; - łamanie linii, przenosi kursor do nowej linii.<br/>
           - &lt;b&gt; - znacznik do pogrubienia tekstu, który nie ma znaczenia semantycznego służy do wyróżnienia tekstu z otaczającego.<br/>
@@ -63,9 +63,9 @@
         </p>
       </article>
 
-      <article class="subpageArticle">
-        <h2>3.03 Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h2> 
-        <p>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">3.03 Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h2> 
+        <p class="subpage__article--content">
           <i>„Najtrudniejszą rzeczą w programowaniu nie jest wymyślanie algorytmów, testowanie aplikacji czy pisanie kodu, lecz wymyślanie nazw dla rzeczy” M.Korsan </i><br/><br/>
 
           Reguły dotyczące nazywania rzeczy:<br/>
@@ -82,9 +82,9 @@
         </p>
       </article>
 
-      <article class="subpageArticle">
-        <h2>3.04 WTF: CSS II</h2> 
-        <p>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">3.04 WTF: CSS II</h2> 
+        <p class="subpage__article--content">
           Jednym z sposobów załączania stylów css jest załączenie do znacznika jako atrybut zwany „inline”. Polega on na wpisywaniu własności wewnątrz znacznika.<br/>
           Nie jest to zalecany sposób dylowania strony.<br/>
 
@@ -121,9 +121,9 @@
       
       </article>
 
-      <article class="subpageArticle">
-        <h2>3.05 Jak działa Internet i przeglądarka</h2> 
-        <p>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">3.05 Jak działa Internet i przeglądarka</h2> 
+        <p class="subpage__article--content">
           <b>http</b> – jest to protokół, którego używają przeglądarki do wczytywania stron z serwera.<br/>
           <b>https</b> – jest to protokół za pomocą, którego przeglądarki wczytują pliki z serwera ten rodzaj protokołu jest szyfrowany i obecnie najbardziej zalecany do używania.<br/><br/>
 
@@ -149,9 +149,9 @@
         </p>
       </article>
 
-      <article class="subpageArticle">
-        <h2>3.06 WTF: JavaScript</h2>
-        <p>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">3.06 WTF: JavaScript</h2>
+        <p class="subpage__article--content">
           JS = JavaScript – Jest to język skryptowy programowania webowego. Na stronie internetowej odpowiada za interakcje i może wpływać na arkusz CSS, HTML oraz content strony.<br/><br/>
 
           Język JS składa się z:<br/>
@@ -169,9 +169,9 @@
         </p>
       </article>
 
-      <article class="subpageArticle">
-        <h2>3.07 Terminal</h2> 
-          <p>
+      <article class="subpage__article">
+        <h2 class="subpage__article--header">3.07 Terminal</h2> 
+          <p class="subpage__article--content">
             Terminal w systemie Windows odpalamy jako „Wiersz Poleceń”<br/><br/>
 
             Komendy w terminalu w systemie Windows:<br/>
@@ -188,7 +188,7 @@
     </section>
   </main>
   <footer class="footer">
-    <p>
+    <p class="footer__content">
       <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
         szkolenia WTF: co ten frontend ?</b>
     </p>
