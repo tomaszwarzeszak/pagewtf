@@ -7,6 +7,6 @@ Witam Cię na mojej stonie internetowej mam nadzieję, że będzie Ci tutaj dobr
 
 const header = document.querySelector('.additives-js');
 
-header.innerHTML = "<h2>Dodatki</h2>";
+header.innerHTML = "Dodatki";
 
 console.log(header);

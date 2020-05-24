@@ -56,31 +56,28 @@ p{
   height: 300px;
 }
 
-.author__about-me{
-
+.author-about-me{
   width: 50%;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.author__about-me--title {
+.author-about-me__title {
   text-align: center;
   color: #E3170A;
   font-size: 25px;
 }
 
-.author__about-me--content {
+.author-about-me__content {
   font-size: 19px;
 }
 
+
 .author__image{
-  text-align: center;
-  width: 50%;
-
-}
-
-.author__image--foto{
+  position: absolute;
+  left: 100px;
+  top: 0;
   width: 300px;
   border-radius: 30% 60% 70% 30%/30% 30% 70% 70%;
 }
@@ -95,32 +92,41 @@ p{
   color: #E3170A;
 }
 
-.notes__article--link {
+.article__link {
   text-decoration: none;
   color: rgb(187, 59, 0);
 }
 
+/*Dodatki*/
+
+.additives{
+  text-align: center;
+  font-size: 25px;
+  color: #E3170A;
+  margin-top: 50px;
+}
+
 /*Podstrony*/
 
-.subpage__article{
+.subpage{
+  position: relative;
+}
+
+.subpage-article{
   margin-top: 60px;
 }
 
-.subpage__article--header{
+.subpage-article__header{
   font-size: 25px;
   color: #E3170A;
 }
 
-.subpage__image{
-  position: relative;
-}
-
-.subpage__image--foto{
+.subpage__foto{
   position: absolute;
   width: 300px;
   border-radius: 20px;
   right: 0;
-  top:50px;
+  top:100px;
 
 }
 
