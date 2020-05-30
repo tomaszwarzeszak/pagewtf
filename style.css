@@ -8,7 +8,7 @@ html{
 
 body {
   margin: 0;
-  background-color: #bdbdbd;
+  background-image: radial-gradient( circle 750px at 51.8% 47.3%,  rgba(189,189,189,0.38) 13.3%, rgba(187,187,187,1) 115.2% );
 }
 
 .main{
@@ -59,6 +59,7 @@ p{
 
 /*o autorze*/
 .author{
+
   margin-top: 60px;
   position: relative;
   height: 300px;
