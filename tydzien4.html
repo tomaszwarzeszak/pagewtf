@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tydzień 4</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -25,12 +27,23 @@
                 <h1 class="header__title">Tydzień 4</h1>
             </header>
 
-                <img class="subpage__foto" src="image/tydzien4.jpg" alt="tydzień 4" />
+            <img class="subpage__foto" src="image/tydzien4.jpg" alt="tydzień 4" />
 
             <article class="subpage-article">
                 <h2 class="subpage-article__header">5.02 WTF: Klan</h2>
                 <p class="subpage-article__content">
+                    Klan jest to DOM jako rodzina elementów. Każdy element tego domu nazywamy węzłem/node.</br>
+                    Klan jest to cała struktura arkusza HTML i jego budowa jest porównywana do drzewa </br>
+                    genealogicznego gdzie występują różne pokolenia elementów.</br></br>
 
+                    Dziedziczenie – polega na przekazywaniu atrybutów rodzica do poziomu niżej czyli wszystkich
+                    </br>dzieci pod warunkiem, że nie są na nowo zdefiniowane.</br></br>
+
+                    Są elementy, które mają zdefiniowane domyślne style w przeglądarkach i w takiej sytuacji</br> w
+                    pierwszej kolejności te style są narzucane elementom.</br></br>
+
+                    • wartość: inherit; - ta wartość jawnie definiuje nam, że element ma dziedziczyć style z
+                    rodzica/body lub elementu, który jest poziom wyżej.</br>
                 </p>
             </article>
 
@@ -38,13 +51,61 @@
             <article class="subpage-article">
                 <h2 class="subpage-article__header">5.03 JS: Funkcje</h2>
                 <p class="subpage-article__content">
+                    Czym jest funkcja?:</br>
+                    - Na wejściu dostaje dane – argumenty</br>
+                    -Dla każdego argumentu zwraca jakąś wartość</br>
+                    -Posiada określony wzór</br></br>
 
+                    Funkcja w JS nie różni się dużo w porównaniu z matematyczną (poniżej przykład zapisania najprostszej
+                    funkcji JS):</br>
+                    „function calculate(myNumber){</br>
+                    return myNumber*7;</br>
+                    }</br>
+                    „function” to deklaracja</br>
+                    „calculate” to nazwa funkcji</br>
+                    „(myNumber)” to Parametr</br>
+                    „return” to Słowo kluczowe</br>
+                    „myNumber*7” to Wynik
+                    </br></br>
+                    <b>Jeśli funkcja nie ma zdefiniowanej wartości „return” to otrzymujemy undifined ale polecenia
+                        wewnątrz funkcji się wykonują.</b></br></br>
+
+                    <b>Return może być zupełnie innego typu niż własności które definiujemy w funkcji.</b></br></br>
+
+                    Funkcja może przyjmować więcej wartości niż pojedyncza liczba lub napis.</br></br>
+
+                    Funkcja w JS</br>
+                    -Deklarujemy nazwę funkcji</br>
+                    -W środku dokonujemy obliczeń/wykonujemy zadania</br>
+                    -Funkcja przyjmuje argumenty (ale nie musi)</br>
+                    -Funkcja zwraca zawsze coś (nawet jeśli nie mamy „return” – wtedy funkcja zwraca
+                    „undefined”</br></br>
+
+
+
+                    Drugi sposób zapisywania funkcji w JS tzw. „(Fat) arrow function”:</br>
+
+                    const calculate = (myNumber) =>{</br>
+                    myNumber = myNumber + 3;</br>
+                    konsole.log(myNumber);</br>
+                    return myNumber*7;</br>
+                    }</br></br>
+
+                    (Fat) arrow function:</br>
+                    - Skraca zapis deklaracji funkcji</br>
+                    - Zwiększa czytelność</br>
+                    - Nie tworzy nowego kontekstu „this”, nie ma dostępu do „arguments” i „super”</br>
+                    - Nie jest zamiennikiem „tradycyjnej” funkcji
                 </p>
             </article>
 
             <article class="subpage-article">
                 <h2 class="subpage-article__header">5.04 JS: Obiekt</h2>
                 <p class="subpage-article__content">
+                    JavaScript jest językiem obiektowym a to oznacza, że prawie wszystko w nim jest obiektem a nawet
+                    jeśli typy proste, które nie są obiektami to tak się zachowują.</br></br>
+
+                    Obiekt jest strukturą danych</br>
 
                 </p>
             </article>
@@ -53,6 +114,15 @@
 
                 <h2 class="subpage-article__header"> 5.05 JS: Immutability w obiektach</h2>
                 <p class="subpage-article__content">
+                    Immutability mówi nam, że nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to
+                    połączenie między nimi a zmiennymi.</br></br>
+
+                    Połączenie nazwy zmiennej do obiektu jest sztywne nie może zostać przepięte natomiast połączenie
+                    między obiektem a wartością są zdefiniowane jako let i możemy je przepinać.</br>
+                    Nazywamy to mutowaniem obiektu. </br></br>
+
+                    Magia JS i mutowania polega na tym, że wszystko opiera się na połączeniach a nie na
+                    wartościach.</br>
 
                 </p>
             </article>
@@ -60,6 +130,21 @@
             <article class="subpage-article">
                 <h2 class="subpage-article__header"> 5.06 U mnie (nie) działa</h2>
                 <p class="subpage-article__content">
+                    <i>„W życiu każdego programisty i programistki przychodzi taki motyw kiedy nie działa”
+                        M.Korsan</i></br></br>
+
+                    Proces szukania błędów i naprawiania ich w naszym kodzie to Debugging.</br></br>
+
+                    Co należy zrobić gdy nie działa:</br>
+                    - Sprawdzić czy jest zapisany plik.</br>
+                    - Sprawdzić czy edytujemy poprawny plik</br>
+                    - Sprawdź czy odświeżyłeś przeglądarkę (Ctrl + f5)</br>
+                    - Sprawdź czy nie ma błędów w edytorze/devtoolsah</br>
+                    - CZYTAJ BŁĘDY</br>
+                    - Zajrzyj w zakładkę Network</br>
+                    - „Pogadaj z Kaczką”</br>
+                    - Sprawdź w Google. (bierz pod uwagę porady z datą max. do roku wstecz jedna z najbardziej
+                    rekomendowanych stron do szukania błędów to stackoverflow).</br>
 
                 </p>
             </article>
@@ -68,6 +153,32 @@
 
                 <h2 class="subpage-article__header">5.07 HTML: Listy, tabele, definicje</h2>
                 <p class="subpage-article__content">
+                    Nowe znaczniki:</br>
+                    - &lt;ul&gt; - Unordered List – nieuporządkowana lista, każdy element ma taką samą ważność.</br>
+                    - &lt;li&gt; - list item – służy do wypisania elementów listy.</br>
+                    - &lt;ol&gt; - odpowiada za listę uporządkowaną.</br>
+                    -&lt;dl&gt; - Description list –</br>
+                    -&lt;dt&gt; - Description terem – znacznik podlegający „dl” oznacza termin, który chcemy
+                    opisać.</br>
+                    -&lt;dd&gt; - Description details - znacznik podlegający „dl” oznacza szczegóły terminu, który
+                    opisujemy.</br>
+                    &lt;table&gt; - Tabela – tabeli używamy tylko wtedy gdy mamy dane, które wpisujemy normalnie w
+                    tabelę np. jakieś spisy itp.</br>
+                    -&lt;tr&gt;- znacznik, który używamy razem z &lt;table&gt; oznacza on wiersz tabeli.</br>
+                    -&lt;td&gt; - znacznik, który używamy razem z &lt;table&gt; oznacza on komórkę tabeli. </br>
+                    -&lt;thead&gt; - znacznik, który używamy razem z &lt;table&gt; oznacza on nagłówek tabeli. </br>
+                    -&lt;th&gt; - komórka w nagłówku tabeli</br>
+                    -&lt;tbody&gt; - Ciało tabeli</br>
+                    -&lt;caption&gt; Opis tabeli</br></br>
+
+
+
+                    Znaczniki „dl”, „dt”, „dd” możemy użyć do wypisywania listy definicji/wskazówek.</br></br>
+
+                    Nowe własności CSS:</br>
+                    - list-style(-type) – własność, która odpowiada za styl listy</br></br>
+
+                    Aby zagnieździć listę musimy dodać ją do jednego elementu listy, która jest nadrzędną listą.</br>
 
                 </p>
             </article>
@@ -76,6 +187,12 @@
 
                 <h2 class="subpage-article__header"> 5.08 Normalizacja vs reset</h2>
                 <p class="subpage-article__content">
+                    Reset – Jest to technika wykorzystywana do usunięcia wszystkich stylów domyślnych przeglądarki dla
+                    naszej strony.</br>
+                    Nie jest to zalecana technika postępowania ze stroną.</br></br>
+
+                    Normalizacja – plik .css udostępniony do pobrania, który usprawnia wyświetlanie elementów
+                    stylowanych domyślnia pomiędzy przeglądarkami.</br>
 
                 </p>
             </article>
@@ -83,7 +200,45 @@
             <article class="subpage-article">
                 <h2 class="subpage-article__header">5.09 Flexbox</h2>
                 <p class="subpage-article__content">
-
+                    Flexbox jest to własność, która służy do rozmieszczania elementów na stronie.</br></br>
+                    <b> Nowe własności CSS: </b></br>
+                    - <b>display: flex; </b> - własność, która zamienia domyślny display Block na nowy system
+                    pozycjonowania i rozmieszczania elementów.</br>
+                    Flex pracuje w dwóch osiach: oś pozioma(row) i oś pionowa(column)</br>
+                    - <b>flex-direction: </b> „row” – jest to domyślna wartość flex i ustawia wszystkie elementy wg. osi
+                    poziomej,
+                    „kolumn” – wartość, która ustawia elementy wg osi pionowej,</br> „row-reverse” – wartość, która
+                    ustawia elementy wg. osi poziomej przesuwając je do krawędzi prawej w odwróconej kolejności,
+                    </br>„column-reverse” –wartość, która ustawia elementy wg. osi pionowej przesuwając je do krawędzi
+                    dolnej w odwróconej kolejności.</br>
+                    - <b>flex-wrap: </b> „nowrap”- domyślna wartość flex, „wrap” – wartość, która ustawia wielkość
+                    elementu wg. własności wpisanych w css, „wrap-reverse” - wartość, która ustawia wielkość elementu
+                    wg. własności wpisanych w css przesuwając je do przeciwnej krawędzi w odwróconej kolejności. </br>
+                    Flex-wrap -odpowiada za zawijanie wiersza/kolumny).</br>
+                    - <b>flex-flow: </b> row nowrap; jest to skrócona wartość, w której podajemy &lt;flex-direction&gt;
+                    oraz &lt;flex-wrap&gt;.</br>
+                    - <b>justify-content</b> (ustawianie elementów wzdłuż osi flex-direction): „flex-start” – domyślna
+                    wartość,</br> „flex-end” – przykleja do prawej krawędzi kontenera,</br> „center” – wyśrodkowuje
+                    elementy,</br> „space-between” – liczy przestrzenie wolne między elementami i tworzy pływający
+                    margines w momencie w, którym się stykają spadają na dół przestrzeń między nimi w obrębie
+                    pojedynczego wiersza jest równa,</br> „space-around” – działa podobnie jak „space-between” dodając
+                    margines na zewnątrz elementu, który wynosi połowę środkowego.</br>
+                    - <b>align-content </b> (ustawia wiersze/kolumny wzdłuż osi przeciwnej do flex-direction (tak jak
+                    justify-content dla drugiej osi)): „stretch”, „flex-start”, „flex-end”, „center”, „space-between”,
+                    „space-around”.</br>
+                    - <b>align-items</b> (ustawianie elementów wzdłuż osi przeciwnej do flex-direction): „stretch”,
+                    „flex-start”, „flex-end”, „center”, „baseline”.</br>
+                    - <b>align-self </b> (ustawianie pojedynczego elementu wzdłuż osi przeciwnej do flex-direction):
+                    „stretch”, „flex-start”, „flex-end”, „center”, „baseline”. </br>
+                    - <b>order </b> (kolejność): 0;</br>
+                    - <b>flex-grow: </b> - jest to współczynnik, który odpowiada za to jak bardzo nasz element powinien
+                    „rosnąć” w wierszu jeśli zostaje jakaś przestrzeń tak aby ten wiersz wypełniał.</br>
+                    - <b>flex-shrink: </b> - współdziała z flex-grow i przy ustawieniu wartości na 0 sprawia, że
+                    elementy nie mogą się „skurczyć” poniżej minimalnej wartości.</br>
+                    - <b>flex-basis: </b> - rozmiar bazowy, wskazanie minimalnej wartości szerokości lub wysokości
+                    elementu.</br>
+                    - <b>flex </b> (skrót, który opisuje własności): &lt;flex-grow&gt; &lt;flex-shrink&gt;
+                    &lt;flex-basis&gt;</br>
                 </p>
             </article>
 
@@ -91,7 +246,33 @@
 
                 <h2 class="subpage-article__header">5.10 Tła</h2>
                 <p class="subpage-article__content">
+                    Wszystkie tła na stronie definiowane są w arkuszach CSS jako własność „background”.</br></br>
 
+                    Własności background w CSS:</br>
+                    - background-image: url(‘sciezka-do-pliku’); </br>
+                    - background-position (ustawia tło względem elementu, który to tło dostaje domyślna wartość to 0,
+                    0).;</br>
+                    - background-repeat (daje możliwość definiowania powtarzania się tła): „repeat” – domyślna wartość
+                    rozszerza tło w każdym kierunku, „repeat-x” – tło powtarza się tylko po osi x w centrum, „repeat-y”
+                    - tło powtarza się tylko po osi y w centrum, „no-repeat” tło ma być niepowtarzalne, „round” – otacza
+                    nasz element, „space” – obrazek jest powtarzany w taki sposób aby się zmieścić w całości bez
+                    przycięcia.</br>
+                    - background-attachment: „scroll” – sprawia, że tło przesuwa się wraz ze stroną, „fixed” – tło jest
+                    nieruchome zostaje w miejscu przy scrollowaniu strony, „local” – sprawia, że tło przesuwa się razem
+                    ze scrollowaną treścią.</br>
+                    - background-orgin( definiuje w, którym miejscu powinno się zaczynać): „padding-box” -,
+                    „border-box”, „content-box”</br>
+                    - background-clip (własność, która mówi nam w, którym miejscu tło powinno być cięte odpowiednio pod
+                    borderem, puddingiem oraz contentem): „border-box” - , „padding-box”, „content-box”</br>
+                    - background-color (wypełnia tło wybranym kolorem): (własność koloru);</br>
+                    Tło może być półprzeźroczyste dzięki specjalnej składni kolorów RGB(a) własność a ustala
+                    przeźroczystość.</br>
+                    - background-size (określa wielkość tła): „auto” – domyślna wartość, ”cover” – obrazek zawsze będzie
+                    wypełniał całość strony, „contain” - obrazek w tle jest widoczny w całości, &lt;width&gt;,
+                    &lt;height&gt; </br></br>
+
+                    Gradienty – własność css, która pełni funkcję ozdoby strony lub przejścia np. między kolorami, można
+                    wygenerować kod css ze strony https://cssgradient.io/gradient-backgrounds/ </br>
                 </p>
             </article>
 
@@ -99,7 +280,14 @@
 
                 <h2 class="subpage-article__header">5.11 Grafik cięcie - też zajęcie</h2>
                 <p class="subpage-article__content">
+                    Jednym z najpopularniejszych programów do budowania layoutów jest program „Figma” </br></br>
 
+                    Aby pobrać repozytorium z GitHub na nasz komputer klikamy Clone Or Download, następnie kopiujemy
+                    link.</br>
+                    W terminalu wchodzimy w wybrany katalog w którym nie ma jeszcze repozytorium, następnie wywołujemy
+                    komendę „git clone” oraz wklejamy pobrany link.</br></br>
+
+                    Własność CSS, która ustala rodzaj fontu to „font-family”</br>
                 </p>
             </article>
 
