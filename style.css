@@ -25,14 +25,14 @@ p{
 /* Nawigacja*/
 
 .navigation{
+  display: flex;
+  justify-content: center;
   background-color: #E6E6E6;
-  width: 100%;
-  text-align: center;
-  height: 60px;
 }
 
 .navigation__link {
-  display: inline-block;
+  text-align: center;
+ 
   width: 180px;
   font-family: 'Calibri',  sans-serif;
   padding: 14px 0;
