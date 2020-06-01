@@ -25,14 +25,21 @@ p{
 /* Nawigacja*/
 
 .navigation{
+  border-radius: 50px;
+  z-index: 2020;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: center;
-  background-color: #E6E6E6;
+  background-color: rgba(230, 230, 230, 0.4);
+}
+.list{
+  margin: 0;
+  display: flex;
 }
 
 .navigation__link {
   text-align: center;
- 
   width: 180px;
   font-family: 'Calibri',  sans-serif;
   padding: 14px 0;
@@ -49,12 +56,16 @@ p{
 
 /*nagłówek*/
 
+.header{
+  padding-top: 100px;
+}
+
 .header__title {
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
   color: #0D0E25;
   text-align: center;
-  margin-top: 40px;
+  margin: 0;
 }
 
 /*o autorze*/
@@ -135,7 +146,7 @@ p{
   width: 300px;
   border-radius: 20px;
   right: 0;
-  top:100px;
+  top:200px;
 
 }
 
