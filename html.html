@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML</title>
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navigation">
+    <ul class="list">
+      <li class="list"><a class="navigation__link" href="index.html">Strona Główna</a></li>
+      <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a>
+      <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
+      <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
+      <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
+    </ul>
+  </nav>
+  <main class="main">
+    <section class="subpage">
+      <header class="header">
+        <h1 class="header__title">WTF: HTML</h1>
+      </header>
+      <section>
+        <h2>Tydzień 1</h2>
+        <article class="subpage-article">
+          <h3 class="subpage-article__header">2.03 WTF: HTML</h3>
+          <p class="subpage-article__content">
+            Język HTML jest językiem znaczników odpowiadający za treść
+            strony.<br />
+            <br />
+            Budowa znacznika:<br />
+            &lt;znacznik atrybut=”wartość”&gt;treść&lt;/znacznik&gt;<br />
+            <br />
+            Podstawowe znaczniki semantyczne:<br />
+            -&lt;main&gt;&lt;/main&gt; - oznacza główną część dokumentu. (może
+            wystąpić tylko jeden na stronie.)<br />
+            -&lt;section&gt;&lt;/section&gt; - sekcja dokumentu, która dzieli
+            stronę na poszczególne sekcjetematyczne.<br />
+            -&lt;article&gt;&lt;/article&gt; - służy do oznaczania samodzielnych
+            grup treści na stronie. (nie jest zależna od sekcji.)<br />
+            -&lt;header&gt;&lt;/header&gt; - Opisuje nazwę dokumentu, sekcji lub
+            artykułu na stronie. (może występować tylko jeden na daną sekcję)<br />
+            -&lt;footer&gt;&lt;/footer&gt; - Opisuje stopkę dokumentu lub
+            sekcji.<br />
+            -&lt;h1-h6&gt; - Tekstowe nagłówki tytułowe – dokumentu/ sekcji
+            numerujemy je po kolei w zależności od ważności danego nagłówka.
+            (znacznik H1 powinien występować tylko raz na stronie)<br />
+            -&lt;p&gt; - odpowiada za paragraf i akapit.<br />
+            <br />
+            • !!! Po napisaniu kodu strony warto sprawdzić go za pomocą
+            validatora W3C
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Tydzień 2</h2>
+        <article class="subpage-article">
+          <h3 class="subpage-article__header">3.03 WTF: HTML II</h3>
+          <p class="subpage-article__content">
+            Nowe znaczniki:<br />
+            - &lt;br/&gt; - łamanie linii, przenosi kursor do nowej linii.<br />
+            - &lt;b&gt; - znacznik do pogrubienia tekstu, który nie ma znaczenia
+            semantycznego służy do wyróżnienia tekstu z otaczającego.<br />
+            - &lt;i&gt; - znacznik do stworzenia pochylonego tekstu, który nie
+            ma znaczenia semantycznego służy do wyróżnienia tekstu z
+            otaczającego.<br />
+            - &lt;strong&gt; - znacznik do pogrubienia tekstu , który ma
+            znaczenie semantyczne, podkreśla wysoką istotność i poważność frazy
+            w nim zawartej.<br />
+            - &lt;Em&gt; znacznik do stworzenia kursywy w tekście, mający
+            znaczenie semantyczne podkreśla, że tekst może mieć inne znaczenie
+            (np.ironia).<br />
+            - &lt;a href=”” target=””>opis łącza&lt;/a&gt; - linki/ łącza
+            wewnątrz dokumentu.<br />
+            - &lt;element id=”mój-identyfikator”&gt; - atrybut id – identyfikuje
+            element (przydaje się do nawigacji w obrębie dokumentu).<br />
+            Aby odwołać się do id w obrębie dokumentu należy zapisać &lt;a
+            href=”#moj-identyfikator”&gt;opis łącza&lt;/a&gt;<br />
+            - &lt;nav&gt; - znacznik w, którym zawieramy nawigację strony.<br />
+            - &lt;img src=”” alt=””&gt; - dodawanie obrazku na stronę. <br />
+          </p>
+        </article>
+  
+        <article class="subpage-article">
+          <h3 class="subpage-article__header">
+            3.04 Opowieść o wężu, kebabie, wielbłądzie i Pascalu
+          </h3>
+          <p class="subpage-article__content">
+            <i>„Najtrudniejszą rzeczą w programowaniu nie jest wymyślanie
+              algorytmów, testowanie aplikacji czy pisanie kodu, lecz wymyślanie
+              nazw dla rzeczy” M.Korsan </i><br /><br />
+  
+            Reguły dotyczące nazywania rzeczy:<br />
+            - nazwy zapisujemy bez polskich znaków,<br />
+            - nie używamy spacji,<br />
+            -najlepiej używać angielskich słów<br />
+            -trzymamy się jednego schematu<br /><br />
+  
+            Konwencje nazewnictwa:<br />
+            - camelCase – nazwa pochodzi od budowy wielbłąda zapisujemy pierwsze
+            słowo małą literą a każde kolejne rozpoczynamy z dużej.<br />
+            - kebab-case – nazwa wzięta z szaszłyka zapisujemy każde słowo z
+            małej litery rodzielając je znakiem „-”.<br />
+            - snake_case – nazwa wzięta z węża snake zapisujemy go z małej
+            litery oddzielając każde słowo znakiem „_”.<br />
+            -PascalCase – nazwa wzięta z języka Pascal zapisujemy każde słowo z
+            dużej litery.<br />
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Tydzień 3</h2>
+        <article class="subpage-article">
+          <h3 class="subpage-article__header">
+            4.12 Block – Element – Modifier
+          </h3>
+          <p class="subpage-article__content">
+            BEM – Sposób zapisywania klas css ułatwiający pracę nad całym
+            projektem.<br /><br />
+  
+            B- Block - nadrzędny element<br />
+            E- Element - część bloku (nie musi być bezpośrednim dzieckiem)<br />
+            M- Modifie - modyfikator jeśli element występuje w kilku wariacjach
+            tworzymy dodatkową klasę.<br /><br />
+  
+            BEM zapisywany jest na wzór dłoni.<br />
+            przykładowa klasa bazowa to class=”hand”, kolejnym poziomem jej
+            dziećmi jest class=”hand__finger”, zaś dzieckiem tej klasy
+            class=”hand__finger—thumb”<br />
+          </p>
+        </article>
+      </section>
+
+    <section>
+      <h2>Tydzień 4</h2>
+      <article class="subpage-article">
+        <h2 class="subpage-article__header">5.02 WTF: Klan</h2>
+        <p class="subpage-article__content">
+            Klan jest to DOM jako rodzina elementów. Każdy element tego domu nazywamy węzłem/node.</br>
+            Klan jest to cała struktura arkusza HTML i jego budowa jest porównywana do drzewa </br>
+            genealogicznego gdzie występują różne pokolenia elementów.</br></br>
+
+            Dziedziczenie – polega na przekazywaniu atrybutów rodzica do poziomu niżej czyli wszystkich
+            </br>dzieci pod warunkiem, że nie są na nowo zdefiniowane.</br></br>
+
+            Są elementy, które mają zdefiniowane domyślne style w przeglądarkach i w takiej sytuacji</br> w
+            pierwszej kolejności te style są narzucane elementom.</br></br>
+
+            • wartość: inherit; - ta wartość jawnie definiuje nam, że element ma dziedziczyć style z
+            rodzica/body lub elementu, który jest poziom wyżej.</br>
+        </p>
+    </article>
+    <article class="subpage-article">
+
+      <h2 class="subpage-article__header">5.07 HTML: Listy, tabele, definicje</h2>
+      <p class="subpage-article__content">
+          Nowe znaczniki:</br>
+          - &lt;ul&gt; - Unordered List – nieuporządkowana lista, każdy element ma taką samą ważność.</br>
+          - &lt;li&gt; - list item – służy do wypisania elementów listy.</br>
+          - &lt;ol&gt; - odpowiada za listę uporządkowaną.</br>
+          -&lt;dl&gt; - Description list –</br>
+          -&lt;dt&gt; - Description terem – znacznik podlegający „dl” oznacza termin, który chcemy
+          opisać.</br>
+          -&lt;dd&gt; - Description details - znacznik podlegający „dl” oznacza szczegóły terminu, który
+          opisujemy.</br>
+          &lt;table&gt; - Tabela – tabeli używamy tylko wtedy gdy mamy dane, które wpisujemy normalnie w
+          tabelę np. jakieś spisy itp.</br>
+          -&lt;tr&gt;- znacznik, który używamy razem z &lt;table&gt; oznacza on wiersz tabeli.</br>
+          -&lt;td&gt; - znacznik, który używamy razem z &lt;table&gt; oznacza on komórkę tabeli. </br>
+          -&lt;thead&gt; - znacznik, który używamy razem z &lt;table&gt; oznacza on nagłówek tabeli. </br>
+          -&lt;th&gt; - komórka w nagłówku tabeli</br>
+          -&lt;tbody&gt; - Ciało tabeli</br>
+          -&lt;caption&gt; Opis tabeli</br></br>
+
+
+
+          Znaczniki „dl”, „dt”, „dd” możemy użyć do wypisywania listy definicji/wskazówek.</br></br>
+
+          Nowe własności CSS:</br>
+          - list-style(-type) – własność, która odpowiada za styl listy</br></br>
+
+          Aby zagnieździć listę musimy dodać ją do jednego elementu listy, która jest nadrzędną listą.</br>
+
+      </p>
+  </article>
+    </section>
+    <section>
+      <h2>Tydzień 5</h2>
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">06.03 Formularze: form, input & label</h3>
+        <p class="subpage-article__content">
+          Formularze służą do komunikacji ze światem.</br></br>
+
+          Nowe znaczniki HTML:</br>
+          - &lt;form&gt; - podstawowy znacznik formularza.</br>
+          - &lt;label&gt; - jest znacznikiem dzięki, któremu możemy stworzyć opis naszego pola.</br>
+          Możemy go stworzyć na kilka sposobów, np. stworzyć osobno dodając atrybut „for” w, którym podajemy id i w ten sposób podłączamy się do naszego inputa</br>
+          Możemy również opakować znacznik „input” znacznikiem „label” i w tym wypadku nie jest konieczne podawanie atrybutu „for”.</br>
+          - &lt;input&gt; - podstawowy znacznik budowy formularza.</br>
+          Input posiada kilka atrybutów: podstawowe name = „nazwa pola” oraz id=”idPola” – które używamy do odnoszenia się do naszego pola przy pomocu „label”, type=”text”, type =”radio” – są to tzw. radiobuttony jeżeli ma być to grupa to nazwa grupy musi być taka sama., type=”checkbox” – tworzy pole do zaznaczania elementów., , value=”wartość” – uzupełnia pole formularza wpisaną wartością, placeholder=”Tekst podpowiedzi” – wpisuje w naszego inputa podpowiedź.</br> 
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">06.04 Formularze: fieldset, radio, checkbox</h3>
+        <p class="subpage-article__content">
+          Nowe znaczniki HTML:</br>
+        - &lt;fieldset&gt; - jest to grupa pól</br>
+        -&lt;legend&gt; - opis grupy pól „fieldset”</br>
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">06.05 Formularze: number, tel, email, range, password, file</h3>
+        <p class="subpage-article__content">
+          Kolejne typy precyzują jakie dokładnie dane możemy zawrzeć w naszym formularzu poza ogólnym typem „text”</br></br>
+
+          Type:</br>
+          „number” - pozwala na wprowadzenie tylko numeru w pole formularza.</br>
+          „Tel” – służy do wprowadzania numeru telefonu.</br>
+          „email” – służy do wprowadzenia adresu email w pole formularza.</br>
+          „range” – typ, który pozwala na budowanie zakresu należy tutaj zdefiniować wartość „min” i „max” oraz „step”.</br>
+          „password” – służy do wprowadzania haseł zasłaniając wpisywaną treść.</br>
+          „file” – przeglądarka do wyboru plików w sytuacji gdy chcemy przesłać jakiś plik.</br>
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">06.06 Formularze: select, textarea, submit</h3>
+        <p class="subpage-article__content">
+          -&lt;select&gt; - jest elementem, który pozwala nam stworzenie listy do wyboru.</br>
+          -&lt;option&gt; - element, który zawieramy w znaczniku select i tworzymy nim opcje o wyboru.</br>
+          -&lt;textarea&gt; - używamy go do wprowadzania dłuższej treści.</br>
+          -&lt;input type=”submit”&gt; - input, który będzie formularz wysyłać, tzw. button.</br>
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">06.07 Formularze: GET i POST</h3>
+        <p class="subpage-article__content">
+          Gdy już zbudujemy strukturę formularza, kolejnym krokiem jest wysłanie go np. na serwer.</br>
+          Do wysyłania formularzy służy atrybut „action” = url://z-ktorym-gadamy, który umieszczamy w znaczniku „form”.</br>
+          Domyślnym typem żądania jest typ GET, działa w ten sposób, że dopisuje do adresu url parametry.</br>
+          wartość Value to są dane, które wysyłamy np. na serwer.</br>
+          Drugą metodą wysyłania danych jest metoda POST, w przypadku gdy wybieramy tą metodę należy dopisać do znacznika „form” metod=”post”. Polega on na tym, że nie wyświetla on parametrów w adresie url.</br></br>
+
+          GET zazwyczaj używamy do pobierania danych a POST do ich wysyłania.</br></br>
+
+          Jest jeszcze coś takiego jak „enctype” jest to wartość elementu form i mówi czy jest to zwykły formularz czy jest to formularz, który zawiera inne treści poza treściami tekstowymi.</br>
+          przyjmuje on dwie wartości: „application/x-www-form-urlencoded” - jest to wartość domyślna, „multipart/form-data” – używamy wtedy gdy np. wysyłamy pliki. </br>
+          </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">06.08 Formularze: walidacja</h3>
+        <p class="subpage-article__content">
+          Walidacja czyli sprawdzanie poprawności wprowadzanych danych do formularza.</br></br>
+
+          Atrybuty:</br>
+          „required” – atrybut, który dokładamy do znaczników np. input i sprawdza czy dane pole jest uzupełnione.</br>
+          „pattern=”[a-zA-Z0-9]+” – atrybut, który wykorzystuje wyrażenia regularne.</br>
+        </p>
+      </article>
+    </section>
+
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__content">
+      <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
+        szkolenia WTF: co ten frontend ?</b>
+    </p>
+  </footer>
+</body>
+
+</html>

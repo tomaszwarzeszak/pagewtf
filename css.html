@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS</title>
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navigation">
+    <ul class="list">
+      <li class="list"><a class="navigation__link" href="index.html">Strona Główna</a></li>
+      <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a>
+      <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
+      <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
+      <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
+    </ul>
+  </nav>
+  <main class="main">
+    <section class="subpage">
+      <header class="header">
+        <h1 class="header__title">WTF: CSS</h1>
+      </header>
+      <section>
+        <h2>Tydzień 1</h2>
+
+        <article class="subpage-article">
+          <h3 class="subpage-article__header">2.04 WTF: CSS</h3>
+          <p class="subpage-article__content">
+            Język CSS odpowiada za wygląd i prezentację strony.<br />
+            <br />
+            Budowa reguły CSS:<br />
+            <br />
+            selektor{<br />
+            właściwość: wartość;<br />
+            };
+            <br />
+            <br />
+            Plik ze stylami definiujemy w pliku HTML w części
+            &lt;head&gt;&lt;/head&gt; za pomocą znacznika:<br />
+            <br />
+            &lt;link href=„style.css” rel=”stylesheet” type=”text/css”&gt;<br />
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Tydzień 2</h2>
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">3.04 WTF: CSS II</h2>
+          <p class="subpage-article__content">
+            Jednym z sposobów załączania stylów css jest załączenie do znacznika
+            jako atrybut zwany „inline”. Polega on na wpisywaniu własności
+            wewnątrz znacznika.<br />
+            Nie jest to zalecany sposób dylowania strony.<br />
+
+            Kolejnym ze sposobów załączania stylów jest stylowanie poprzez tzw.
+            „Prawdziwe selektory”.<br />
+            Jednym z najbardziej zalecanych i popularnych sposobów jest
+            stylowanie poprzez dodawanie atrybutu „class” lub „Id” do wybranego
+            znacznika w arkuszu HTML.<br /><br />
+
+            W arkuszu stylów klasę zapisujemy :<br />
+            .nazwa-klasy{<br />
+            właściwiość: wartość;<br />
+            }<br /><br />
+
+            <b>Można używać tej samej klasy w kilku znacznikach.</b><br /><br />
+
+            W arkuszu stylów id zapisujemy:<br />
+            #name{<br />
+            właściwość: wartość;<br />
+            {<br /><br />
+
+            <b>Id używamy tylko jeden raz w arkuszu HTML.</b><br /><br />
+
+            Selektoty możemy z sobą łączyć zapisując je po spacji, nazywamy to
+            „specyficznością CSS”.<br /><br />
+
+            Własności CSS na stronie wczytywane są wg. specyficzności:<br />
+            -!important – jest to własność zapisywana bezpośrednio przy
+            własności w arkuszu CSS.<br />
+            - style=”” – własność zapisywana wewnątrz znacznika HTML.<br />
+            - #name – id zapisywane w znaczniku HTML a stylowane w arkuszu
+            CSS.<br />
+            -.name - klasa zapisywana jest w znaczniku HTLML a stylowana w
+            arkuszu CSS.<br />
+            - element – zapisywany jest w sekcji body w arkuszu HTML.<br /><br />
+
+            <b>Jeżeli specyficzność jest równa wygrywa selektor bliżej
+              elementu.</b><br /><br />
+
+            Najbardziej zalecaną formą jest dodawanie klasy do wszystkich
+            elementów i unikanie zagnieżdżeń.<br />
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2>Tydzień 3</h2>
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">
+            4.04 Życie w pudełku: Display, wymiary i overflow
+          </h2>
+          <p class="subpage-article__content">
+            Nowe znaczniki:<br />
+            -&lt;div&gt; - jest to znacznik. który nie ma znaczenia
+            semantycznego, używany jest w sytuacji gdy chcemy coś „opakować”
+            (tylko wtedy gdy nie istnieje odpowiedni semantyczny znacznik).<br /><br />
+
+            Własność CSS:<br />
+            - display: Block – własność, która powoduje przeniesienie danego
+            elementu (pudełka) do nowej lini.<br />
+            - display: inline – własność , za pomocą której elementy otrzymują
+            rozmiar zawartości bloku oraz ustawiają się jednen obok drugiego.<br />
+            - display: inline-block – własność ta nadaje elementowi cechy
+            inline, jednak możemy nadawać dodatkowe cechy, które są dostępne dla
+            własności blokowych a nie są dostępne dla inline.<br />
+            - width/height – własność za pomocą, której możemy ustalać wysokość
+            oraz szerokość zarówno całej strony jak i wskazanego elementu.
+            Własności te nie są dostępne dla „display:inline”<br />
+            - max-width/max-height – wartości te powodują, że elementy na
+            stronie dopasowują się szerokością i wysokością do okna przeglądarki
+            w której są wyświetlane.<br />
+            - min-width/ min-height – określa minimalną wysokość oraz szerokość
+            jaką musi mieć dany element na stronie.<br />
+            - overflow: hidden – powoduje odcięcie treści która wychodzi za
+            wcześniej zdeklarowane wartości heisgh i width.<br />
+            - overflow: visible – własność za pomocą, której element wychodzi
+            poza zdeklarowaną wysokość oraz szerokość.<br />
+            - overflow: auto- do treści która wychodzi poza obszar boxu
+            dokładany jest scroll.<br />
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">4.05 Jednostki</h2>
+          <p class="subpage-article__content">
+            W zapisie własności używamy jednostek:<br />
+            -0 – jest to jednostka w której nie musimy zapisywać %, px itp.<br />
+            -px- piksele są jedną z najpopularniejszych używanych jednostek na
+            stronie internetowej, ponieważ ekran jest zbudowany z pikseli.<br />
+            -% - procent- jest to jednostka która nadaje wielkość elementu wg %
+            elementu w którym się znajduje.<br />
+            - vw – viewport width – jest to jednostka która ustawia % całego
+            okna a nie elementu(rodzica)<br />
+            - vh – viewport height – jest to jednostka która ustawia % wysokości
+            wg. całego okna.<br />
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">
+            4.06 Życie w pudełku: Box model (pudding/border/margin)
+          </h2>
+          <p class="subpage-article__content">
+            Box model są to elementy(prostokąty) opakowujące poszczególne części
+            strony.<br /><br />
+
+            Box model składa się z:<br />
+            -padding –jest to margines wewnętrzny elementu odpowiada za to o ile
+            mają być oddalone elementy które znajdują się w środku elementu,
+            który ma padding.<br />
+            Jego wartości zapisujemy zgodnie z ruchami wskazówek zegara
+            (top/right/bottom/left).<br />
+            Są również wartości „lustrzane” czyli jeżeli zapiszemy dwie wartości
+            to pierwsza będzie się odnosić do góra/dół a druga prawo/lewo.<br />
+            - border – jest elementem który tworzy „obramowanie” elementu.<br />
+            Przy definicji border podajemy width/style/color.<br />
+            - border radius – pozwala na zaokrąglenie elementu.<br />
+            -margin – jest to margines zewnętrzny, który występuje poza
+            elementem odpowiada za to o ile możemy się odsunąć od innych
+            elementów na stronie.<br />
+            Sposób zapisywania jest identyczny jak w przypadku pudding.<br />
+            -margin: …px auto; - powoduje wyśrodkowanie elementu.<br />
+            Margines automatyczny działa tylko wtedy gdy szerokość elementu jest
+            zdefiniowana.<br />
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">
+            4.07 Życie w pudełku: box-sizing
+          </h2>
+          <p class="subpage-article__content">
+            Domyślną wartością Box Sizing to wartość „content-box” mówi nam ona
+            to, że jeżeli zdefiniujemy sobie szerokość contentu to nie wpływa to
+            na pudding, border, margin<br /><br />
+
+            -„border box”odpowiada za automatyczne dopasowanie contentu w środku
+            elementu w momencie dodania wartości padding, border całość elementu
+            wprowadzona w wartości „width” zostanie zachowana.<br /><br />
+
+            -„content box” powoduje automatyczne powiększenie elementu o wartość
+            pudding oraz border nie naruszając wprowadzonych wcześniej wartości
+            width oraz height contentu na naszej stronie.<br /><br />
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">
+            4.08 Życie w pudełku: position
+          </h2>
+          <p class="subpage-article__content">
+            Position- Jest to wartość która pozwala nam określić dokładną
+            pozycję elementu na stronie co do Piksela.<br /><br />
+
+            Własności position:<br />
+            - position: static – jest to domyślna własność elementu <br />
+            - position: relative – sprawia, że względem tego elementu gdzie jest
+            on zdefiniowany będą przesuwanie elementy w własności „absolute”<br />
+            - position: absolute – pozwala za pomocą własności „top, right,
+            bottom, left” przesuwać nasz element na stronie co do piksela.<br />
+            - z-index – za pomocą tego atrybutu definiujemy kolejność elementów
+            wyświetlonych w przypadku gdy elementy na siebie nachodzą.<br />
+            - position: fixed – posiada bardzo zbliżone własności do „absolute”
+            różni się tym, w momencie przewijania strony element zostaje na
+            swoim miejscu nie znika z ekranu, przy tej własności należy
+            zdefiniować szerokość elementu.<br />
+            - position: sticky – polega na przyklejeniu w momencie gdy krawędź
+            przy skrolowaniu uderza w krawędź okna. (rodzic tego elementu nie
+            może mieć własności overflow)<br />
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">4.09 Życie w pudełku: float</h2>
+          <p class="subpage-article__content">
+            Float- służy do opływania elementów na stronie.<br />
+            Clear - służy do „czyszczenia” treści i rozszerzenia boxu do
+            wielkości elementu zawierającego float.<br /><br />
+
+            <b>Float nie służy do budowania layoutów.</b><br />
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Tydzień 4</h2>
+        <article class="subpage-article">
+
+          <h2 class="subpage-article__header"> 5.08 Normalizacja vs reset</h2>
+          <p class="subpage-article__content">
+            Reset – Jest to technika wykorzystywana do usunięcia wszystkich stylów domyślnych przeglądarki dla
+            naszej strony.</br>
+            Nie jest to zalecana technika postępowania ze stroną.</br></br>
+
+            Normalizacja – plik .css udostępniony do pobrania, który usprawnia wyświetlanie elementów
+            stylowanych domyślnia pomiędzy przeglądarkami.</br>
+
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h2 class="subpage-article__header">5.09 Flexbox</h2>
+          <p class="subpage-article__content">
+            Flexbox jest to własność, która służy do rozmieszczania elementów na stronie.</br></br>
+            <b> Nowe własności CSS: </b></br>
+            - <b>display: flex; </b> - własność, która zamienia domyślny display Block na nowy system
+            pozycjonowania i rozmieszczania elementów.</br>
+            Flex pracuje w dwóch osiach: oś pozioma(row) i oś pionowa(column)</br>
+            - <b>flex-direction: </b> „row” – jest to domyślna wartość flex i ustawia wszystkie elementy wg. osi
+            poziomej,
+            „kolumn” – wartość, która ustawia elementy wg osi pionowej,</br> „row-reverse” – wartość, która
+            ustawia elementy wg. osi poziomej przesuwając je do krawędzi prawej w odwróconej kolejności,
+            </br>„column-reverse” –wartość, która ustawia elementy wg. osi pionowej przesuwając je do krawędzi
+            dolnej w odwróconej kolejności.</br>
+            - <b>flex-wrap: </b> „nowrap”- domyślna wartość flex, „wrap” – wartość, która ustawia wielkość
+            elementu wg. własności wpisanych w css, „wrap-reverse” - wartość, która ustawia wielkość elementu
+            wg. własności wpisanych w css przesuwając je do przeciwnej krawędzi w odwróconej kolejności. </br>
+            Flex-wrap -odpowiada za zawijanie wiersza/kolumny).</br>
+            - <b>flex-flow: </b> row nowrap; jest to skrócona wartość, w której podajemy &lt;flex-direction&gt;
+            oraz &lt;flex-wrap&gt;.</br>
+            - <b>justify-content</b> (ustawianie elementów wzdłuż osi flex-direction): „flex-start” – domyślna
+            wartość,</br> „flex-end” – przykleja do prawej krawędzi kontenera,</br> „center” – wyśrodkowuje
+            elementy,</br> „space-between” – liczy przestrzenie wolne między elementami i tworzy pływający
+            margines w momencie w, którym się stykają spadają na dół przestrzeń między nimi w obrębie
+            pojedynczego wiersza jest równa,</br> „space-around” – działa podobnie jak „space-between” dodając
+            margines na zewnątrz elementu, który wynosi połowę środkowego.</br>
+            - <b>align-content </b> (ustawia wiersze/kolumny wzdłuż osi przeciwnej do flex-direction (tak jak
+            justify-content dla drugiej osi)): „stretch”, „flex-start”, „flex-end”, „center”, „space-between”,
+            „space-around”.</br>
+            - <b>align-items</b> (ustawianie elementów wzdłuż osi przeciwnej do flex-direction): „stretch”,
+            „flex-start”, „flex-end”, „center”, „baseline”.</br>
+            - <b>align-self </b> (ustawianie pojedynczego elementu wzdłuż osi przeciwnej do flex-direction):
+            „stretch”, „flex-start”, „flex-end”, „center”, „baseline”. </br>
+            - <b>order </b> (kolejność): 0;</br>
+            - <b>flex-grow: </b> - jest to współczynnik, który odpowiada za to jak bardzo nasz element powinien
+            „rosnąć” w wierszu jeśli zostaje jakaś przestrzeń tak aby ten wiersz wypełniał.</br>
+            - <b>flex-shrink: </b> - współdziała z flex-grow i przy ustawieniu wartości na 0 sprawia, że
+            elementy nie mogą się „skurczyć” poniżej minimalnej wartości.</br>
+            - <b>flex-basis: </b> - rozmiar bazowy, wskazanie minimalnej wartości szerokości lub wysokości
+            elementu.</br>
+            - <b>flex </b> (skrót, który opisuje własności): &lt;flex-grow&gt; &lt;flex-shrink&gt;
+            &lt;flex-basis&gt;</br>
+          </p>
+        </article>
+
+        <article class="subpage-article">
+
+          <h2 class="subpage-article__header">5.10 Tła</h2>
+          <p class="subpage-article__content">
+            Wszystkie tła na stronie definiowane są w arkuszach CSS jako własność „background”.</br></br>
+
+            Własności background w CSS:</br>
+            - background-image: url(‘sciezka-do-pliku’); </br>
+            - background-position (ustawia tło względem elementu, który to tło dostaje domyślna wartość to 0,
+            0).;</br>
+            - background-repeat (daje możliwość definiowania powtarzania się tła): „repeat” – domyślna wartość
+            rozszerza tło w każdym kierunku, „repeat-x” – tło powtarza się tylko po osi x w centrum, „repeat-y”
+            - tło powtarza się tylko po osi y w centrum, „no-repeat” tło ma być niepowtarzalne, „round” – otacza
+            nasz element, „space” – obrazek jest powtarzany w taki sposób aby się zmieścić w całości bez
+            przycięcia.</br>
+            - background-attachment: „scroll” – sprawia, że tło przesuwa się wraz ze stroną, „fixed” – tło jest
+            nieruchome zostaje w miejscu przy scrollowaniu strony, „local” – sprawia, że tło przesuwa się razem
+            ze scrollowaną treścią.</br>
+            - background-orgin( definiuje w, którym miejscu powinno się zaczynać): „padding-box” -,
+            „border-box”, „content-box”</br>
+            - background-clip (własność, która mówi nam w, którym miejscu tło powinno być cięte odpowiednio pod
+            borderem, puddingiem oraz contentem): „border-box” - , „padding-box”, „content-box”</br>
+            - background-color (wypełnia tło wybranym kolorem): (własność koloru);</br>
+            Tło może być półprzeźroczyste dzięki specjalnej składni kolorów RGB(a) własność a ustala
+            przeźroczystość.</br>
+            - background-size (określa wielkość tła): „auto” – domyślna wartość, ”cover” – obrazek zawsze będzie
+            wypełniał całość strony, „contain” - obrazek w tle jest widoczny w całości, &lt;width&gt;,
+            &lt;height&gt; </br></br>
+
+            Gradienty – własność css, która pełni funkcję ozdoby strony lub przejścia np. między kolorami, można
+            wygenerować kod css ze strony https://cssgradient.io/gradient-backgrounds/ </br>
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Tydzień 5</h2>
+        <article class="subpage-article">
+          <h3 class="subpage-article__header"> 06.09 CSS: Grid</h3>
+          <p class="subpage-article__content">
+            Grid jest to technologia, która służy do budowania layoutów.</br></br>
+
+            Po co ten Grid ?</br>
+            -Potrzeba stworzenia prostego systemu do budowania layoutów (tabele, floaty, div-oza itp. nie spełniały
+            oczekiwań i były kiepską praktyką)</br>
+            -przyjazny zapis i możliwość łatwej edycji w kontekście responsywności</br>
+            -standard dopasowany do aktualnego stanu stron internetowych.</br></br>
+
+            Grid zbudowany jest z siatki , która podzielona jest przez tzw. Grid Line na kolumny i wiersze.</br></br>
+
+            „Grid Track” (Column) to kolumna</br>
+            „Grid Track” (row) to wiersz</br>
+            „Grid Cell” to pojedyńcza komórka</br>
+            „Grid Area” składa się z kilku komórek (musi być prostokątem).</br></br>
+
+            Nowe własności CSS:</br>
+            -display: grid – domyślna wartość grid.</br>
+            - grid-template-columns: &lt;wartości po spacji&gt; własność, która tworzy nam kolumny o podanych
+            szerokościach,( własności nie muszą być podawane w px).</br>
+            - grid-template-rows: &lt;wartości po spacji&gt; własność, która tworzy nam wiersze o podanych
+            wysokościach.</br>
+            - column-gap: - tworzy odstępy między kolumnami siatki grid.</br>
+            - row-gap: - tworzy odstępy między wierszami siatki grid.</br></br>
+
+            Nowa jednostka: „fr” działa jak ułamek np. jeżeli podajemy kilka wartości fr one się sumują i dzielą przez
+            sumę. jednostki możemy mixować czyli np. gdy potrzebujemy jedną kolumnę o konkretnej wartości px to reszta
+            może być zdefiniowana jako fr.</br>
+
+            Jest możliwość zdefiniowania szerokości za pomocą funkcji css „ repeat(ile razy, wartość)”</br>
+            Funkcja „min max(min wartość, max wartość) – określa minimalną oraz maksymalną wartość wybranej
+            kolumny.</br></br>
+
+            Własności grid działają tylko bezpośrednio na jego dzieci.</br>
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h3 class="subpage-article__header">06.10 CSS: Grid – podstawowy layout</h3>
+          <p class="subpage-article__content">
+            Nowe własności CSS:</br>
+            - grid-template-areas: definiujemy ilość kolumn i wierszy.</br>
+            - grid-area: </br>
+            &lt;nazwa obszaru&gt;</br>
+            &lt;row-start&gt;/&lt;col-start&gt;/&lt;row-end&gt;/&lt;col-end&gt; - definiujemy znacznik, który ma
+            zajmować zdefiniowany wcześniej obszar. jest to skrócony zapis.</br>
+            -grid-row-start: numer / [nazwa] / span</br>
+            -grid-row-end: numer / [nazwa] / span</br>
+            -grid-column-start: numer / [nazwa] / span</br>
+            -grid-column-end: numer / [nazwa] / span</br>
+          </p>
+        </article>
+
+        <article class="subpage-article">
+          <h3 class="subpage-article__header">06.11 CSS: Media queries & mobile first</h3>
+          <p class="subpage-article__content">
+            Media Queries – pozwala nam „skroić stronę na wymiar” za pomocą modyfikacji stylów css.</br>
+            W CSS oznaczamy to jako „@media”</br>
+            RWD – Responsive Web design – oznacza responsywny Web design czyli dopasowanie układu strony do
+            rozdzielczości ekranu.</br></br>
+
+            Własności, które możemy podać:</br>
+            Media Type:</br>
+            screen:</br>
+            print</br>
+            @media: All</br>
+            …</br>
+
+            Media feature:</br>
+            -min-width:</br>
+            -max-width:</br>
+            -color:</br>
+            -aspect-ratio:</br>
+            -orientation:</br>
+            Możemy je łączyć za pomocą: and/ not/ , czyli tworzymy pewnego rodzaju wyrażenie logiczne.</br>
+            Media Queries zalecane jest definiować już po zdefiniowaniu naszego elementu na stronie.</br></br>
+
+            mobile-first – polega na tym, że najpierw stylujemy naszą stronę na urządzenia mobilne a poźniej definiujemy
+            za pomocą mediaQueries jak ma wyglądać na rozdzielczościach wiekszych.</br>
+            break point – to punkty w, których następuje tzw. łamanie strony czyli wszystkie zmiany dla danej
+            rozdzielczości.</br>
+          </p>
+        </article>
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__content">
+      <b>&copy; Strona domowa Tomasza Warzeszak. Wszystkie treści są efektem
+        szkolenia WTF: co ten frontend ?</b>
+    </p>
+  </footer>
+</body>
+
+</html>
