@@ -32,6 +32,7 @@ p{
   display: flex;
   justify-content: center;
   background-color: rgba(230, 230, 230, 0.4);
+  backdrop-filter: blur(10px);
 }
 .list{
   margin: 0;
@@ -112,10 +113,6 @@ p{
   color: #E3170A;
 }
 
-.article__link {
-  text-decoration: none;
-  color: rgb(187, 59, 0);
-}
 
 /*Dodatki*/
 
@@ -141,13 +138,12 @@ p{
   color: #E3170A;
 }
 
-.subpage__foto{
-  position: absolute;
-  width: 300px;
-  border-radius: 20px;
-  right: 0;
-  top:200px;
-
+.subpage__header{
+  top:60px;
+  position: sticky;
+  text-align: center;
+  font-size: 30px;;
+  margin: 60px 0 0 0;
 }
 
 
