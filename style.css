@@ -71,48 +71,79 @@ p{
 
 /*o autorze*/
 .author{
-
-  margin-top: 60px;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 120px;
+  margin-top: 40px;
   height: 300px;
 }
 
-.author-about-me{
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
+.about-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.author-about-me__title {
+.about-me__title {
+  margin: 0;
   text-align: center;
   color: #E3170A;
   font-size: 25px;
 }
 
-.author-about-me__content {
+.about-me__content {
   font-size: 19px;
 }
 
+.person{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.author__image{
-  position: absolute;
-  left: 100px;
-  top: 0;
+.person__image{
   width: 300px;
   border-radius: 30% 60% 70% 30%/30% 30% 70% 70%;
 }
 
+
+.person__name{
+  margin: 0;
+  padding-top: 30px;
+}
+
+.person__description{
+  margin:10px;
+}
+
 /*notatki*/
 
+.notes{
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-areas:"h2 h2 h2" "article article article";
+  row-gap: 20px;
+}
+
 .notes__header {
-  margin-top: 80px;
-  margin-bottom: 40px;
+  grid-area: h2;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 25px;
   color: #E3170A;
 }
 
+.article__title{
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+}
 
 /*Dodatki*/
 
