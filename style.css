@@ -175,8 +175,6 @@ p{
 }
 
 
-
-
 /*stopka*/
 .footer{
   font-family: 'Verdana', sans-serif;
@@ -188,7 +186,7 @@ p{
   color: #ffffff;
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 425px){
  
   .main{
     padding: 0 20px;
@@ -215,9 +213,13 @@ p{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
 .main{
   padding: 0 20px;
 }
 
+.notes{
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
 }
+}
+
