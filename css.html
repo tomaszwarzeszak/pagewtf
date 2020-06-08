@@ -11,15 +11,18 @@
 </head>
 
 <body>
-  <nav class="navigation">
-    <ul class="list">
-      <li class="list"><a class="navigation__link" href="index.html">Strona Główna</a></li>
-      <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a>
-      <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
-      <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
-      <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
-    </ul>
-  </nav>
+  <header class="hamburger">
+    <button class="menu-button menu-button--js">MENU</button>
+    <nav class="navigation navigation--js">
+      <ul class="list">
+        <li class="list"><a class="navigation__link" href="index.html">Strona Główna</a></li>
+        <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a>
+        <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
+        <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
+        <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
+      </ul>
+    </nav>
+  </header>
   <main class="main">
     <header class="header">
       <h1 class="header__title">WTF: CSS</h1>
@@ -429,6 +432,7 @@
         szkolenia WTF: co ten frontend ?</b>
     </p>
   </footer>
+  <script src="hamburger.js"></script>
 </body>
 
 </html>

@@ -11,15 +11,18 @@
 </head>
 
 <body>
-  <nav class="navigation">
-    <ul class="list">
-      <li class="list"><a class="navigation__link" href="index.html">Strona Główna</a></li>
-      <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a>
-      <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
-      <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
-      <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
-    </ul>
-  </nav>
+  <header class="hamburger">
+    <button class="menu-button menu-button--js">MENU</button>
+    <nav class="navigation navigation--js">
+      <ul class="list">
+        <li class="list"><a class="navigation__link" href="index.html">Strona Główna</a></li>
+        <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a>
+        <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
+        <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
+        <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
+      </ul>
+    </nav>
+  </header>
 
   <header class="header">
     <h1 class="header__title">TW PROJECT</h1>
@@ -28,8 +31,8 @@
   <main class="main">
     <section class="author">
       <div class="about-me">
-        <h2 class="about-me__title">Kim Jestem ?</h2>
-        <p class="about-me__content">
+        <h2 class="about-me__title about-me__title--js">Kim Jestem ?</h2>
+        <p class="about-me__content about-me__content--js">
           Cześć! mam na imię Tomek jestem pasjonatem fotografii oraz
           filmowania z drona. Bardzo lubię również uprawiać sport np.
           bieganie, jazda na rowerze lub grać w siatkówkę. Poza pasjami na co
@@ -37,12 +40,13 @@
           frontend ?.<br /><br />
           Na tej stronie będę publikował notatki z danego tygodnia nauki.
         </p>
+        <button class="button button--js">Zmiana treści</button>
       </div>
       <div class="person">
-      <img class="person__image" src="image/fotoImage.jpg" alt="Zdjęcie profilowe" />
-      <h2 class="person__name">Tomasz Warzeszak</h2>
-      <p class="person__description"><i>Student "WTF: Co ten Frontend ?" School</i></p>
-    </div>
+        <img class="person__image" src="image/fotoImage.jpg" alt="Zdjęcie profilowe" />
+        <h2 class="person__name">Tomasz Warzeszak</h2>
+        <p class="person__description"><i>Student "WTF: Co ten Frontend ?" School</i></p>
+      </div>
     </section>
 
     <section class="notes">
