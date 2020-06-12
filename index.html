@@ -20,6 +20,8 @@
         <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
         <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
         <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
+        <li class="list"><a class="navigation__link" href="#contact">Kontakt</a>
+
       </ul>
     </nav>
   </header>
@@ -108,6 +110,47 @@
           mobilnych.
         </p>
       </article>
+      <article class="article">
+        <h3 class="article__title">Tydzień 6:</h3>
+        <p class="article__content">
+          W tym tygodniu poznajemy takie narzędzie jak "node.js", poznajemy również nowy sposób zapisu stylów o nazwie "SCSS" w języku "SASS".
+        </p>
+      </article>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="contact__header">Kontakt:</h2>
+      <form action="https://dev.cotenfrontend.pl" method="POST" class="form">
+          <p>
+            <label for="firstName">Imię:
+              <input class="form__input" id="firstName" name="firstName" type="text" placeholder="Podaj Imię" required pattern="[a-zA-Z]+">
+            </label>
+          </p>
+          <p>
+            <label for="lastName">Nazwisko:
+              <input class="form__input" id="lastName" name="lastName" type="text" placeholder="Podaj Nazwisko" required pattern="[a-zA-Z]+">
+            </label>
+          </p>
+          <p>
+            <label for="phone">Nr. Telefonu:
+              <input class="form__input" id="phone" name="phone" type="tel" placeholder="Podaj nr. telefonu" >
+            </label>
+          </p>
+          <p>
+            <label for="email">E-mail:
+              <input class="form__input" id="email" name="email" type="email" placeholder="Podaj adres e-mail" required>
+            </label>
+          </p>
+          <p class="form__message">
+            <label for="message">Wiadomość:
+              <textarea class="form__textarea" id="message" name="message" type="textarea" placeholder="Wpisz treść wiadomości" required></textarea>
+          </label>
+          </p>
+          <p class="form__button">
+          <label for="btnSend">
+            <input class="form__send" id="btnSend" name="btnSend" type="submit" value="Wyślij">
+          </label>
+          </p>
+        </form>
     </section>
     <section class="additives additives-js"></section>
   </main>

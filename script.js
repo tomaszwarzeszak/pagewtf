@@ -6,9 +6,9 @@ console.log(`Cześć moje imię to ${firstName} nazwisko ${lastName} mam ${age} 
 Witam Cię na mojej stonie internetowej mam nadzieję, że będzie Ci tutaj dobrze. `);
 
 /*praca domowa tydzień 4 */
-// const header = document.querySelector(".additives-js");
-// header.innerHTML = "Dodatki";
-// console.log(header);
+const header = document.querySelector(".additives-js");
+header.innerHTML = "Dodatki";
+console.log(header);
 
 /*praca domowa tydzień 5 */
 function hallo(firstName, lastName, age) {
@@ -54,7 +54,7 @@ console.log(myName.child.age);
 
 const button = document.querySelector(".button--js");
 
-const myClick = () => {
+button.addEventListener("click", () => {
   const heading = document.querySelector(".about-me__title--js");
   heading.innerHTML = "Zapewne tego nie chcesz czytać";
  
@@ -62,9 +62,9 @@ const myClick = () => {
   const description = document.querySelector(".about-me__content--js");
   description.innerHTML =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facilis asperiores porro commodi deserunt harum, eius nesciunt laboriosam, in exercitationem magni voluptas. Recusandae, magni. Ab voluptate rerum aliquid quidem tempore!";
-};
 
-button.addEventListener("click", myClick);
+  });
+  
 
 /*hamburger*/
 
@@ -73,7 +73,7 @@ const menuButton = document.querySelector(".menu-button--js");
 
 
 menuButton.addEventListener("click", () =>{
-    const navigation = document.querySelector('.navigation--js')
+    const navigation = document.querySelector('.navigation--js');
     navigation.classList.toggle('navigation--open');
 
 });
