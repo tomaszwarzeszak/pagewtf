@@ -261,6 +261,82 @@
         </p>
       </article>
     </section>
+
+    <section class="subpage">
+      <h2 class="subpage__header">Tydzień 6</h2>
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">7.03 .gitignore</h3>
+        <p class="subpage-article__content">
+          Plik .gitignore zawiera zestaw reguł, które pozwalają na zdefiniowanie listy rzeczy, które nie powinny
+          znajdować się w naszym repozytorium np. plik z hasłami itp.
+          Jeżeli nie chcemy aby któryś z naszych plików znajdujących się na dysku został pominięty przy wysyłaniu do do
+          repozytorium należy jego nazwę wpisać w stworzonym pliku .gitignore.
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">7.04 Node.js</h3>
+        <p class="subpage-article__content">
+          Aby zainstalować narzędzie node.js należy pobrać ze strony https://nodejs.org instalator oraz przeprowadzić
+          instalację.
+          Po wykonaniu instalacji należy w wierszu poleceń sprawdzić czy narzędzie jest zainstalowane wpisując komendę
+          „node –v”.
+        </p>
+
+        <p class="subpage-article__content">
+          Node jest to taki javascript uruchamiany poza przeglądarką z taką różnicą, że node nie ma dostępu do DOM i
+          wszystkich API dostępnych w przeglądarce.
+          Aby uruchomić skrypt js w wierszu poleceń należy wykonać komendę „node (nazwa pliku który chcemy uruchomić).
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">
+          7.05 NPM i NPX
+        </h3>
+        <p class="subpage-article__content">
+          NPM jest menagerem paczek do node.js, repozytorium z którego możemy ściągać gotowe paczki i programy, które
+          pozwolą nam lepiej i szybciej budować nasz projekt.
+        </p>
+
+        <p class="subpage-article__content">
+          Po co nam te paczki?:</br>
+          - dodajemy do projektów sporo gotowych bibliotek/narzędzi</br>
+          - nie można polegać na konfiguracji edytora/jego wtyczkach</br>
+          - uniwersalne źródło ze wszystkimi narzędziami</br>
+          - dostęp do aktualizacji</br>
+          NPM to taki appstore/sklep play dla frontendowca.</br>
+        </p>
+
+        <p class="subpage-article__content">
+          Aby zainicjować NPM w naszym projekcie należy użyć komendy „npm init”
+        </p>
+
+        <p class="subpage-article__content">
+          Instalacja npm odbywa się poprzez komendę „npm install &lt;nazwa_paczki&gt;
+          powstaje nam katalog node_modules w którym znajduje się zainstalowany NPM. Katalogu node_modules nie
+          commitujemy, należy go dodać do listy w .gitignore.
+        </p>
+
+        <p class="subpage-article__content">
+          Alternatywą dla NPM jest np. YARN jest to też menager, który korzysta z tej samej bazy pakietów co NPM
+        </p>
+
+        <p class="subpage-article__content">
+          Komenda „npx” pozwala nam na skorzystanie z narzędzia konsolowego np. cowsay.
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">
+          7.06 NPM Scripts
+        </h3>
+        <p class="subpage-article__content">
+          Skrypty NPM to takie komendy/skróty, które możemy zdefiniować w obiekcie „scripts” w pliku „package.json” w
+          naszym projekcie
+        </p>
+      </article>
+    </section>
   </main>
 
   <footer class="footer">

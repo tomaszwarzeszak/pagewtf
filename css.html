@@ -16,10 +16,10 @@
     <nav class="navigation navigation--js">
       <ul class="list">
         <li class="list"><a class="navigation__link" href="index.html">Strona Główna</a></li>
-        <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a>
-        <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a>
-        <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a>
-        <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a>
+        <li class="list"><a class="navigation__link" href="html.html">WTF: HTML</a></li>
+        <li class="list"><a class="navigation__link" href="css.html">WTF: CSS</a></li>
+        <li class="list"><a class="navigation__link" href="js.html">WTF: JS</a></li>
+        <li class="list"><a class="navigation__link" href="narzedzia.html">WTF: Narzędzia</a></li>
       </ul>
     </nav>
   </header>
@@ -421,6 +421,104 @@
           za pomocą mediaQueries jak ma wyglądać na rozdzielczościach wiekszych.<br>
           break point – to punkty w, których następuje tzw. łamanie strony czyli wszystkie zmiany dla danej
           rozdzielczości.<br>
+        </p>
+      </article>
+    </section>
+
+    <section class="subpage">
+      <h2 class="subpage__header">Tydzień 6</h2>
+      <article class="subpage-article">
+        <h3 class="subpage-article__header"> 7.02 Pseudoelementy & Pseudoklasy</h3>
+        <p class="subpage-article__content">
+          Pseudoelementy – jest to rzecz z dziedziny własności CSS, która pozwala nam na to, że CSS może tworzyć treść a
+          robi to za pomocą własności „content: ”” „.
+        </p>
+
+        <p class="subpage-article__content">
+          Pseudoelementy:</br>
+          - element::before – jest to coś co jest przed treścią naszego elementu.</br>
+          - element::after – jest to coś co jest po treści naszego elementu</br>
+        </p>
+
+        <p class="subpage-article__content">
+          Aby zdefiniować pseudoelement w CSS należy wybraną klasę skopiować z dopiskiem::before lub ::after oraz w
+          środku tego elementu zdefiniować własność content.
+          Ta treść umieszczona za pomocą before oraz after nie jest częścią DOM-u.
+          W praktyce używamy tego głównie do tworzenia elementów dekoracyjnych strony.
+        </p>
+
+        <p class="subpage-article__content">
+          Pseudoklasa – oznaczana jest przez pojedynczy „:” i jest to tzw: modyfikator elementu, którego działanie
+          wynika z innego działania.
+        </p>
+
+        <p class="subpage-article__content">
+          Pseudoklasy:</br>
+          -hover – czyli najechanie na element.</br>
+          - visited – są to linki, które już odwiedziliśmy </br>
+          - fokus – służy do wyróżniania rzeczy, które są aktualnie podświetlone.</br>
+          - first-child – (jeśli dany element jest pierwszym dzieckiem jakiegoś rodzica to własności się wykonują)</br>
+          - last-child – (jeśli dany element jest ostatnim dzieckiem jakiegoś rodzica to własności się wykonują)</br>
+          -not(selektor) – zaprzeczenie wszystkie elementy, które mają daną klasę ale nie mają klasy specjalnej
+          (selektor) otrzymują dane własności.</br>
+        </p>
+
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">7.07 SASS/SCSS</h3>
+        <p class="subpage-article__content">
+          SASS – jest to preprocesor CSS, który zamienia nam swoją składnię/kod, który jest rozumiany przez
+          przeglądarkę.
+        </p>
+
+        <p class="subpage-article__content">
+          Jedna z rzeczy, które wyróżniają składnię SASS to możliwość używania $zmiennych, definiujemy je poza definicją
+          klas natomiast w klasach przy definiowaniu własności wpisujemy nazwę zmiennej.
+        </p>
+
+        <p class="subpage-article__content">
+          @mixin -> @include – mixin to jest funkcja w której możemy zdefiniować kilka własności. Przy stylowaniu
+          elementów wystarczy wpisać @include(nazwa funkcji) i grupa styli z fukcji zostanie zaaplikowana do elementu.
+          W funkcji @mixin możemy definiować również parametry tak jak w przypadku funkcji JS.
+        </p>
+
+        <p class="subpage-article__content">
+          @extend działa w ten sposób, że po uprzednim zdefiniowaniu styli dla danej klasy np. „.font-style” przy
+          stylowaniu kolejnego elementu dopisując „@extend .font-style” style z klasy „.font-style” zostają zaaplikowane
+          do tego elementu
+        </p>
+
+        <p class="subpage-article__content">
+          Parent Selector – funkcja zapisywana za pomocą „&” pozwala nam na prostsze zapisywanie zagnieżdżeń elementów
+          bardziej podobne do struktury HTML.
+
+          Przy korzystaniu z preprocesorów nie edytujemy plików wynikowych .css.
+        </p>
+      </article>
+
+      <article class="subpage-article">
+        <h3 class="subpage-article__header">7.08 node-sass</h3>
+        <p class="subpage-article__content">
+          Aby skorzystać z preprocesorów Sass za pomocą .node należy najpierw zainstalować w naszym projekcie plik .json
+          komendą npm init –y
+        </p>
+
+        <p class="subpage-article__content">
+          Aby zamienić nasz kod SASS na CSS należy zainstalować paczkę .node-sass za pomocą .nodejs
+          Po zainstalowaniu node-scss tworzymy w naszym projekcie plik .scss następnie wprowadzamy style zgodnie ze
+          składnią .scss, następnie należy w terminalu wprowadzić komendę, która stworzy plik .css do naszego pliku
+          .scss (instrukcja znajduje się w dokumentacji).
+          komenda to: np. node-sass (podajemy nazwę pliku .scss) (podajemy nazwę pliku .css który ma zostać utworzony).
+        </p>
+
+        <p class="subpage-article__content">
+          Aby nie wprowadzać komendy za przy każdej zmianie w pliku .scss można w terminalu włączyć śledzenie dopisując
+          do komendy np. node-scss –w. Aby zakończyć śledzenie należy wprowadzić Ctrl+C.
+        </p>
+
+        <p class="subpage-article__content">
+          Można również to polecenie wprowadzić do package.json jako skrypt w obiekcie script pod skrótową nazwą.
         </p>
       </article>
     </section>
