@@ -1,0 +1,22 @@
+{
+  "name": "twproject",
+  "version": "1.0.0",
+  "description": "learning programming in WTF School",
+  "main": "sript.js",
+  "scripts": {
+    "test": "script run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaszwarzeszak/pagewtf.git"
+  },
+  "keywords": [
+    "pageWTF"
+  ],
+  "author": "Tomasz Warzeszak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomaszwarzeszak/pagewtf/issues"
+  },
+  "homepage": "https://github.com/tomaszwarzeszak/pagewtf#readme"
+}
