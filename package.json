@@ -4,6 +4,7 @@
   "description": "learning programming in WTF School",
   "main": "sript.js",
   "scripts": {
+    "scss": "npx node-sass -w style.scss style.css",
     "script start": "node script.js",
     "cow": "cowsay siema siema"
   },
