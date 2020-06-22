@@ -4,7 +4,8 @@
   "description": "learning programming in WTF School",
   "main": "sript.js",
   "scripts": {
-    "test": "script run"
+    "script start": "node script.js",
+    "cow": "cowsay siema siema"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/tomaszwarzeszak/pagewtf/issues"
   },
-  "homepage": "https://github.com/tomaszwarzeszak/pagewtf#readme"
+  "homepage": "https://github.com/tomaszwarzeszak/pagewtf#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "cowsay": "^1.4.0"
+  }
 }
