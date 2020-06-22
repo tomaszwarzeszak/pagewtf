@@ -279,12 +279,16 @@ p {
 
 /*stopka*/
 .footer {
+  position: sticky;
+  bottom: 0;
   font-family: "Verdana", sans-serif;
   background-color: #2b2d42;
   text-align: center; }
   .footer__content {
-    padding: 40px 0;
+    font-size: 14px;
+    padding: 20px 0;
     color: #ffffff; }
-    @media screen and (max-width: 425px) {
-      .footer__content {
-        padding: 40px 20px; } }
+  @media screen and (max-width: 425px) {
+    .footer .footer__content {
+      font-size: 10px;
+      padding: 10px 20px; } }
